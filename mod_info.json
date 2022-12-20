@@ -1,0 +1,10 @@
+{
+	"id":"Stroke_Fish",
+	"name":"摸鱼船包 [Stroke Fish]",
+    "utility": "true",
+	"author":"野鸦神",
+	"version":"1.0.0",
+	"description":"野鸦神摸鱼画的一些原版势力扩展船包.",
+	"gameVersion":"0.95.1a-RC6",
+	"jars":["jars/fs_core.jar"],
+}

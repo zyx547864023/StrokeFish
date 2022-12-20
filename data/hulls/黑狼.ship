@@ -1,0 +1,89 @@
+{
+  "hullName": "黑狼",
+  "hullId": "黑狼",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/黑狼.png",
+  "style": "HIGH_TECH",
+  "height": 86,
+  "width": 110,
+  "center": [55, 43],
+  "collisionRadius": 63,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 61.5,
+  "viewOffset": 0,
+  "builtInWings": [
+    "wasp_wing"
+  ],
+  "builtInWeapons": {
+    "WS0001": "irpulse",
+    "WS0002": "irpulse",
+    "WS0003": "ionpulser",
+    "WS0004": "ionpulser"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [31, 13]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [31, -13]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [3, 25.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [3, -25.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-29.5, 20.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-29.5, -20.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -42, 12,
+    -19.5, 27.5,
+    -22, 56,
+    42.5, 13,
+    42.5, -13,
+    -22, -56,
+    -19.5, -27.5,
+    -42, -12
+  ]
+}

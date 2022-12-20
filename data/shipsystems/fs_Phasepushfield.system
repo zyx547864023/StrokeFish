@@ -1,0 +1,14 @@
+{
+	"id":"fs_Phasepushfield",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.shipsystems.scripts.ai.fs_Phasepushfieldai",
+	"statsScript":"data.shipsystems.scripts.fs_Phasepushfield",
+	
+	
+	
+	
+	"aiHints":{
+	
+	}
+}

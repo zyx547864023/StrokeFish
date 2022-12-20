@@ -1,0 +1,10 @@
+{
+	"graphics":{
+        "fs_systems":{
+			"fs_pshield1":"graphics/fx/fs_pshield_1.png",
+			"fs_pshield2":"graphics/fx/fs_pshield_2.png"
+		},
+		
+    },
+    
+}

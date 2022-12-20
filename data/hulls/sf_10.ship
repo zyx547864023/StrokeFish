@@ -1,0 +1,63 @@
+{
+  "hullName": "魅影",
+  "hullId": "sf_10",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/魅影.png",
+  "style": "HIGH_TECH",
+  "height": 80,
+  "width": 100,
+  "center": [50, 40],
+  "collisionRadius": 58.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 57.5,
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "engineSlots": [
+    {
+      "location": [-33, 41.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-33, -41.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-41, 25],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-41, -25],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -40, -29,
+    -33, -44.5,
+    -23, -50,
+    -6, -51.5,
+    15, -30.5,
+    39.5, -26,
+    39.5, 26,
+    15, 30.5,
+    -6, 51.5,
+    -23, 50,
+    -33, 44.5,
+    -40, 29
+  ]
+}

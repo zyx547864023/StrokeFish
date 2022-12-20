@@ -1,0 +1,14 @@
+{
+	"id":"fs_pearlshield",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.shipsystems.scripts.ai.fs_pearlshieldai",
+	"statsScript":"data.shipsystems.scripts.fs_pearlshield",
+	
+	
+	
+	
+	"aiHints":{
+	
+	}
+}

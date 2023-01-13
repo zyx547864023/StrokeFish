@@ -37,10 +37,10 @@ public class MissionDefinition implements MissionDefinitionPlugin {
         // files in data/variants and data/variants/fighters
         //api.addToFleet(FleetSide.PLAYER, "station_small_Standard", FleetMemberType.SHIP, "Test Station", false);
         if (!testMode) {
-            api.addToFleet(FleetSide.PLAYER, "暗涌重炮手_variant", FleetMemberType.SHIP, "暗涌重炮手", true);
-            api.addToFleet(FleetSide.PLAYER, "波波_variant", FleetMemberType.SHIP, "波波", false);
-            api.addToFleet(FleetSide.PLAYER, "德莱曼妮_variant", FleetMemberType.SHIP, "德莱曼妮", false);
-            api.addToFleet(FleetSide.PLAYER, "革命_variant", FleetMemberType.SHIP, "革命", false);
+            api.addToFleet(FleetSide.PLAYER, "fs_AnYongZhongPaoShou_variant", FleetMemberType.SHIP, "暗涌重炮手", true);
+            api.addToFleet(FleetSide.PLAYER, "fs_BoBo_variant", FleetMemberType.SHIP, "波波", false);
+            api.addToFleet(FleetSide.PLAYER, "fs_DeLaiManNi_variant", FleetMemberType.SHIP, "德莱曼妮", false);
+            api.addToFleet(FleetSide.PLAYER, "fs_GeMing_variant", FleetMemberType.SHIP, "革命", false);
             api.addToFleet(FleetSide.PLAYER, "海德拉_variant", FleetMemberType.SHIP, "海德拉", false);
             api.addToFleet(FleetSide.PLAYER, "海使_variant", FleetMemberType.SHIP, "海使", false);
             api.addToFleet(FleetSide.PLAYER, "黑狼_variant", FleetMemberType.SHIP, "黑狼", false);

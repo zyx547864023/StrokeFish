@@ -1,0 +1,25 @@
+{
+  "variantId": "fs_HeiYing_variant",
+  "hullId": "fs_HeiYing",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "breachpod",
+        "WS0002": "breachpod",
+        "WS0003": "breachpod",
+        "WS0004": "breachpod"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

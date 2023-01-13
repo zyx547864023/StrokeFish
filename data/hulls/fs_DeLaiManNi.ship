@@ -1,0 +1,202 @@
+{
+  "hullName": "德莱曼妮",
+  "hullId": "fs_DeLaiManNi",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/fs_DeLaiManNi.png",
+  "style": "LOW_TECH",
+  "height": 258,
+  "width": 174,
+  "center": [87, 122.5],
+  "collisionRadius": 165,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 161.5,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-11.5, 63]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-11.5, -63]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -39,
+      "locations": [31, -28.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 40,
+      "locations": [31, 28.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -53,
+      "locations": [-31, -47.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "MEDIUM",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 53,
+      "locations": [-31, 47.5]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -72.5,
+      "locations": [-54.5, -57]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 72.5,
+      "locations": [-54.5, 57]
+    },
+    {
+      "id": "WS0011",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -90,
+      "locations": [-69.5, -65]
+    },
+    {
+      "id": "WS0012",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 90,
+      "locations": [-69.5, 65]
+    },
+    {
+      "id": "WS0014",
+      "size": "SMALL",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": -180,
+      "locations": [-66.5, 0]
+    },
+    {
+      "id": "WS0003",
+      "size": "LARGE",
+      "type": "BALLISTIC",
+      "mount": "TURRET",
+      "arc": 150,
+      "angle": 0,
+      "locations": [54.5, -0]
+    },
+    {
+      "id": "WS0013",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [6.5, 51]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [6.5, -51]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-122.5, 75.5],
+      "length": 59,
+      "width": 27,
+      "angle": 180,
+      "contrailSize": 27,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-122.5, -75.5],
+      "length": 59,
+      "width": 27,
+      "angle": -180,
+      "contrailSize": 27,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-106.5, 16.5],
+      "length": 37.5,
+      "width": 17,
+      "angle": 180,
+      "contrailSize": 17,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-106.5, -16.5],
+      "length": 37.5,
+      "width": 17,
+      "angle": -180,
+      "contrailSize": 17,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -104, -22,
+    -83.5, -30.5,
+    -84, -41.5,
+    -104.5, -61.5,
+    -122, -67.5,
+    -122, -82,
+    -107, -87.5,
+    -21, -73.5,
+    15, -46,
+    45, -45.5,
+    119.5, -31,
+    134, -23.5,
+    134, 23.5,
+    119.5, 31,
+    45, 45.5,
+    15, 46,
+    -21, 73.5,
+    -107, 87.5,
+    -122, 82,
+    -122, 67.5,
+    -104.5, 61.5,
+    -84, 41.5,
+    -83.5, 30.5,
+    -104, 22
+  ]
+}

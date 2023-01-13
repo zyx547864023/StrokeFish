@@ -1,0 +1,25 @@
+{
+  "variantId": "fs_HeiLang_variant",
+  "hullId": "fs_HeiLang",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "irpulse",
+        "WS0002": "irpulse",
+        "WS0003": "cryoblaster",
+        "WS0004": "cryoblaster"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

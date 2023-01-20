@@ -13,7 +13,7 @@
   "viewOffset": 0,
   "builtInWeapons": {
     "WS0013": "fs_TianDun_cover",
-    "WS0014": "fs_TianDun_TuJi_left",
+    "WS0014": "fs_TianDunXianQuan_left",
     "WS0015": "fs_TianDunXianQuan_right"
   },
   "weaponSlots": [

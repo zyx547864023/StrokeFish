@@ -13,11 +13,11 @@
     RENDER_BARREL_BELOW
   ],
   "turretOffsets": [
-    20,
-    1.5
+    37,
+    0
   ],
   "turretAngleOffsets": [
-    0
+    -6
   ],
   "hardpointOffsets": [
     40,

@@ -35,9 +35,9 @@ name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn r
 如果射程内没有敌舰，则优先瞄准来袭的导弹。",,,,,7.4
 #内置武器,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 天盾左线圈炮,fs_TianDunXianQuan_left,1,,1000,500,,200,,10,40,8,,,,FRAGMENTATION,50,,0,1,1,,0,10,2,10,,700,,,30,,,PD,"pd13, SR, lowtech_bp, merc",,,,点防御 (范围性),,,,,,,,,,4
-天盾左突击炮,fs_TIanDun_TuJi_left,1,,4000,900,,120,,5,20,20,,,,HIGH_EXPLOSIVE,120,,0,0.25,1,,0,10,2,10,,800,,,50,,,,"he18, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,7
+天盾左突击炮,fs_TianDun_TuJi_left,1,,4000,900,,120,,5,20,20,,,,HIGH_EXPLOSIVE,120,,0,0.25,1,,0,10,2,10,,800,,,50,,,,"he18, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,7
 天盾右线圈炮,fs_TianDunXianQuan_right,1,,1000,500,,200,,10,40,8,,,,FRAGMENTATION,50,,0,1,1,,0,10,2,10,,700,,,30,,,PD,"pd13, SR, lowtech_bp, merc",,,,点防御 (范围性),,,,,,,,,,4
-天盾右突击炮,fs_TIanDun_TuJi_right,1,,4000,900,,120,,5,20,20,,,,HIGH_EXPLOSIVE,120,,0,0.25,1,,0,10,2,10,,800,,,50,,,,"he18, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,7
+天盾右突击炮,fs_TianDun_TuJi_right,1,,4000,900,,120,,5,20,20,,,,HIGH_EXPLOSIVE,120,,0,0.25,1,,0,10,2,10,,800,,,50,,,,"he18, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,7
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #内置武器,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 幽魂炮,fs_WeiZhiXingHao_ghost,0,,3000,900,,750,,200,5,16,,,,HIGH_EXPLOSIVE,750,,0,3,1,,0,10,5,10,,500,,,400,,,,"he18, lowtech_bp, merc",,,,反装甲,,,,,,,,,,8

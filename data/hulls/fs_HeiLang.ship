@@ -12,7 +12,7 @@
   "shieldRadius": 61.5,
   "viewOffset": 0,
   "builtInWings": [
-    "wasp_wing"
+    "fs_HeiZhua_wing"
   ],
   "builtInWeapons": {
     "WS0001": "irpulse",

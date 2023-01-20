@@ -7,7 +7,6 @@ import com.fs.starfarer.api.combat.ShipAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import org.dark.shaders.distortion.DistortionShader;
 import org.dark.shaders.distortion.RippleDistortion;
-import org.lazywizard.lazylib.combat.AIUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
 
@@ -17,6 +16,9 @@ public class fs_Phasepushfield extends BaseShipSystemScript {
     @Override
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
         ShipAPI ship = (ShipAPI) stats.getEntity();
+        if (ship == null) {
+            return;
+        }
         if (!init1) {
             init1=true;
 
@@ -39,21 +41,21 @@ public class fs_Phasepushfield extends BaseShipSystemScript {
                             } else {
                                 arg = 270f - (float) Math.toDegrees(Math.atan((target.getLocation().getX() - ship.getLocation().getX()) / (target.getLocation().getY() - ship.getLocation().getY())));
                             }//获取目标与舰船的位置角度关系
-                            CombatUtils.applyForce(target, arg, 300f + target.getMass() * 2f);//产生推力，最后一个变量为推力大小
+                            CombatUtils.applyForce(target, arg, 300f + target.getMass() * 2f);//产生推力，最后一个变量为推力大小。
                         }
                     }
                 }
                 for (DamagingProjectileAPI target : Global.getCombatEngine().getProjectiles()) {
                     float arg;
                     if(target!=null&&target.getOwner()!=ship.getOwner()) {
-                    float d = Vector2f.sub(target.getLocation(), ship.getLocation(), new Vector2f()).length();//判定距离
+                    float d = Vector2f.sub(target.getLocation(), ship.getLocation(), new Vector2f()).length();//判定距离。
                     if (d <= 700f) {
                         if (target.getLocation().getY() > ship.getLocation().getY()) {
                             arg = 90f - (float) Math.toDegrees(Math.atan((target.getLocation().getX() - ship.getLocation().getX()) / (target.getLocation().getY() - ship.getLocation().getY())));
                         } else {
                             arg = 270f - (float) Math.toDegrees(Math.atan((target.getLocation().getX() - ship.getLocation().getX()) / (target.getLocation().getY() - ship.getLocation().getY())));
-                        }//获取目标与舰船的位置角度关系
-                        CombatUtils.applyForce(target, arg, 500f);//产生推力，最后一个变量为推力大小
+                        }//获取目标与舰船的位置角度关系。
+                        CombatUtils.applyForce(target, arg, 500f);//产生推力，最后一个变量为推力大小。
                     }
                     }
                 }
@@ -66,7 +68,7 @@ public class fs_Phasepushfield extends BaseShipSystemScript {
                 ripple1.fadeOutSize(0.4f);
                 ripple1.fadeOutIntensity(0.3f);
                 ripple1.setFrameRate(90f);
-                DistortionShader.addDistortion(ripple1);//生成扭曲效果
+                DistortionShader.addDistortion(ripple1);//生成扭曲效果。
                 for (ShipAPI target : Global.getCombatEngine().getShips()) {
                     float arg;
                     if(target!=null&&target.getOwner()!=ship.getOwner()) {
@@ -76,7 +78,7 @@ public class fs_Phasepushfield extends BaseShipSystemScript {
                                 arg = 90f - (float) Math.toDegrees(Math.atan((target.getLocation().getX() - ship.getLocation().getX()) / (target.getLocation().getY() - ship.getLocation().getY())));
                             } else {
                                 arg = 270f - (float) Math.toDegrees(Math.atan((target.getLocation().getX() - ship.getLocation().getX()) / (target.getLocation().getY() - ship.getLocation().getY())));
-                            }//获取目标与舰船的位置角度关系
+                            }//获取目标与舰船的位置角度关系。
                             CombatUtils.applyForce(target, arg + 180f, 300f + target.getMass() * 2f);//产生推力，最后一个变量为推力大小
                         }
                     }
@@ -90,7 +92,7 @@ public class fs_Phasepushfield extends BaseShipSystemScript {
                             arg = 90f - (float) Math.toDegrees(Math.atan((target.getLocation().getX() - ship.getLocation().getX()) / (target.getLocation().getY() - ship.getLocation().getY())));
                         } else {
                             arg = 270f - (float) Math.toDegrees(Math.atan((target.getLocation().getX() - ship.getLocation().getX()) / (target.getLocation().getY() - ship.getLocation().getY())));
-                        }//获取目标与舰船的位置角度关系
+                        }//获取目标与舰船的位置角度关系。
                         CombatUtils.applyForce(target, arg + 180f, 500f);//产生牵引力，最后一个变量为推力大小
                     }
                     }

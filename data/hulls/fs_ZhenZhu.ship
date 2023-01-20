@@ -159,67 +159,59 @@
   ],
   "engineSlots": [
     {
-      "location": [-149.5, 23],
-      "length": 69.5,
-      "width": 28,
+      "location": [-201.5, -56],
+      "length": 100,
+      "width": 37,
       "angle": 180,
-      "contrailSize": 28,
+      "contrailSize": 37,
       "style": "HIGH_TECH"
     },
     {
-      "location": [-149.5, -12],
-      "length": 69.5,
-      "width": 28,
+      "location": [-201.5, 56],
+      "length": 100,
+      "width": 37,
       "angle": -180,
-      "contrailSize": 28,
+      "contrailSize": 37,
       "style": "HIGH_TECH"
     },
     {
-      "location": [-173, -31],
-      "length": 69.5,
-      "width": 28,
-      "angle": -180,
-      "contrailSize": 28,
-      "style": "HIGH_TECH"
-    },
-    {
-      "location": [-173, 42],
-      "length": 69.5,
-      "width": 28,
+      "location": [-179.5, -36],
+      "length": 100,
+      "width": 37,
       "angle": 180,
-      "contrailSize": 28,
+      "contrailSize": 37,
       "style": "HIGH_TECH"
     },
     {
-      "location": [-198.5, -52.5],
-      "length": 69.5,
-      "width": 28,
+      "location": [-179.5, 36],
+      "length": 100,
+      "width": 37,
       "angle": -180,
-      "contrailSize": 28,
+      "contrailSize": 37,
       "style": "HIGH_TECH"
     },
     {
-      "location": [-198.5, 63.5],
-      "length": 69.5,
-      "width": 28,
+      "location": [-161, -20],
+      "length": 100,
+      "width": 37,
       "angle": 180,
-      "contrailSize": 28,
+      "contrailSize": 37,
       "style": "HIGH_TECH"
     },
     {
-      "location": [-153.5, 5.5],
-      "length": 69.5,
-      "width": 28,
-      "angle": 180,
-      "contrailSize": 28,
-      "style": "HIGH_TECH"
-    },
-    {
-      "location": [-153.5, 5.5],
-      "length": 69.5,
-      "width": 28,
+      "location": [-161, 20],
+      "length": 100,
+      "width": 37,
       "angle": -180,
-      "contrailSize": 28,
+      "contrailSize": 37,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-165.5, -0],
+      "length": 100,
+      "width": 37,
+      "angle": 180,
+      "contrailSize": 37,
       "style": "HIGH_TECH"
     }
   ],

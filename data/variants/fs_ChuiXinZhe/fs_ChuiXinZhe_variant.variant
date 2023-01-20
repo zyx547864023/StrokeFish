@@ -1,0 +1,25 @@
+{
+  "variantId": "fs_ChuiXinZhe_variant",
+  "hullId": "fs_ChuiXinZhe",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0009": "fs_ChuiXin_chain",
+        "WS0010": "fs_ChuiXin_chain",
+        "WS0011": "fs_ChuiXin_cannon",
+        "WS0012": "fs_ChuiXin_cannon"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

@@ -1,0 +1,140 @@
+{
+  "hullName": "霸王A7",
+  "hullId": "fs_BaWangA7",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/fs_BaWangA7.png",
+  "style": "LOW_TECH",
+  "height": 242,
+  "width": 496,
+  "center": [248, 121],
+  "collisionRadius": 272.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 266,
+  "viewOffset": 0,
+  "weaponSlots": [
+    {
+      "id": "LB 1",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        37.5, 187.5,
+        59, 58
+      ]
+    },
+    {
+      "id": "LB 2",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        58.5, 130,
+        57, 35.5
+      ]
+    },
+    {
+      "id": "LB 3",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        57, -130,
+        57.5, -35.5
+      ]
+    },
+    {
+      "id": "LB 4",
+      "size": "LARGE",
+      "type": "LAUNCH_BAY",
+      "mount": "HIDDEN",
+      "arc": 360,
+      "angle": 0,
+      "locations": [
+        38.5, -187,
+        80, -36
+      ]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-88, 138],
+      "length": 137.5,
+      "width": 65,
+      "angle": 180,
+      "contrailSize": 65,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-88, -138],
+      "length": 137.5,
+      "width": 65,
+      "angle": -180,
+      "contrailSize": 65,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-93.5, 95],
+      "length": 113.5,
+      "width": 44,
+      "angle": 179.5,
+      "contrailSize": 44,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-93.5, -95],
+      "length": 113.5,
+      "width": 44,
+      "angle": -179.5,
+      "contrailSize": 44,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-88, 115.5],
+      "length": 107,
+      "width": 49,
+      "angle": 180,
+      "contrailSize": 49,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-88, -115.5],
+      "length": 107,
+      "width": 49,
+      "angle": -180,
+      "contrailSize": 49,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-93.5, -73],
+      "length": 97.369751,
+      "width": 30.700569,
+      "angle": -179.5,
+      "contrailSize": 30.700569,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-93.5, 73],
+      "length": 97.369751,
+      "width": 30.700569,
+      "angle": 179.5,
+      "contrailSize": 30.700569,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -77, -152.5,
+    -43, -220.5,
+    30, -247,
+    81.5, -112,
+    81.5, 112,
+    30, 247,
+    -43, 220.5,
+    -77, 152.5
+  ]
+}

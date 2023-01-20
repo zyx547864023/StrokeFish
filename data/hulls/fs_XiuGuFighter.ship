@@ -1,0 +1,52 @@
+{
+  "hullName": "锈骨无人机",
+  "hullId": "fs_XiuGuFighter",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fs_XiuGuFighter.png",
+  "style": "LOW_TECH",
+  "height": 14,
+  "width": 11,
+  "center": [5.5, 7],
+  "collisionRadius": 9,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 0,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0001": "bomb"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-3, -0]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-6, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-6, 0],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -3.5, 3,
+    4, 3,
+    4, -3,
+    -3.5, -3
+  ]
+}

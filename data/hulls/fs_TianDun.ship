@@ -13,8 +13,8 @@
   "viewOffset": 0,
   "builtInWeapons": {
     "WS0013": "fs_TianDun_cover",
-    "WS0014": "fs_TIanDun_TuJi",
-    "WS0015": "fs_TIanDun_TuJi"
+    "WS0014": "fs_TianDun_TuJi_left",
+    "WS0015": "fs_TianDunXianQuan_right"
   },
   "weaponSlots": [
     {
@@ -141,7 +141,7 @@
       "mount": "HARDPOINT",
       "arc": 0,
       "angle": 0,
-      "locations": [99, 51]
+      "locations": [94.5, 50]
     },
     {
       "id": "WS0015",
@@ -150,7 +150,7 @@
       "mount": "HARDPOINT",
       "arc": 0,
       "angle": -0,
-      "locations": [99, -51]
+      "locations": [94.5, -50]
     }
   ],
   "engineSlots": [

@@ -1,0 +1,51 @@
+{
+  "id": "fs_TianDun_TuJi_right",
+  "specClass": "projectile",
+  "projectileSpecId": "devastator_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/fs_TianDun/fs_TianDun_TuJi_right.png",
+  "turretGunSprite": "graphics/weapons/fs_TianDun/fs_TianDun_TuJi_gun.png",
+  "hardpointSprite": "graphics/weapons/fs_TianDun/fs_TianDun_TuJi_right.png",
+  "hardpointGunSprite": "graphics/weapons/fs_TianDun/fs_TianDun_TuJi_gun.png",
+  "visualRecoil": 8,
+  "renderHints": [
+    RENDER_BARREL_BELOW
+  ],
+  "turretOffsets": [
+    20,
+    1.5
+  ],
+  "turretAngleOffsets": [
+    0
+  ],
+  "hardpointOffsets": [
+    40,
+    -9,
+    40,
+    0,
+    40,
+    9
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "muzzleFlashSpec": {
+    "length": 45,
+    "spread": 25,
+    "particleSizeMin": 12,
+    "particleSizeRange": 22,
+    "particleDuration": 0.13,
+    "particleCount": 35,
+    "particleColor": [
+      255,
+      225,
+      165,
+      175
+    ]
+  },
+  "fireSoundTwo": "devastator_fire"
+}

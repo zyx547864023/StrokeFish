@@ -1,0 +1,25 @@
+{
+  "variantId": "fs_ShaYiXi_variant",
+  "hullId": "fs_ShaYiXi",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0012": "ionpulser",
+        "WS0013": "ionpulser",
+        "WS0014": "ionpulser",
+        "WS0015": "ionpulser"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

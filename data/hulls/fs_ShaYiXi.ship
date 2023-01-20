@@ -1,0 +1,187 @@
+{
+  "hullName": "沙翼蜥",
+  "hullId": "fs_ShaYiXi",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/fs_ShaYiXi.png",
+  "style": "LOW_TECH",
+  "height": 271,
+  "width": 176,
+  "center": [88, 135.5],
+  "collisionRadius": 161.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 158.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0012": "ionpulser",
+    "WS0013": "ionpulser",
+    "WS0014": "ionpulser",
+    "WS0015": "ionpulser"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 149,
+      "locations": [-88, 45]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "ENERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -149,
+      "locations": [-88, -45]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 90,
+      "locations": [-40.5, 46.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -90,
+      "locations": [-40.5, -46.5]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 90,
+      "locations": [-5.5, 49]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "SYNERGY",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -90,
+      "locations": [-5.5, -49]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [18.5, 36]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -0,
+      "locations": [18.5, -36]
+    },
+    {
+      "id": "WS0009",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -0,
+      "locations": [41.5, -24]
+    },
+    {
+      "id": "WS0010",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 0,
+      "locations": [41.5, 24]
+    },
+    {
+      "id": "WS0011",
+      "size": "LARGE",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 360,
+      "angle": 0,
+      "locations": [-1.5, -0]
+    },
+    {
+      "id": "WS0012",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [109.5, 23]
+    },
+    {
+      "id": "WS0013",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [109.5, -23]
+    },
+    {
+      "id": "WS0014",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [112, -31.5]
+    },
+    {
+      "id": "WS0015",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [112, 31.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-134.5, 44],
+      "length": 123,
+      "width": 58,
+      "angle": 180,
+      "contrailSize": 58,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-134.5, -44],
+      "length": 123,
+      "width": 58,
+      "angle": -180,
+      "contrailSize": 58,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -134.5, -66,
+    78, -65,
+    134, -54,
+    133.5, -11,
+    62.5, -11,
+    62.5, 11,
+    133.5, 11,
+    134, 54,
+    78, 65,
+    -134.5, 66
+  ]
+}

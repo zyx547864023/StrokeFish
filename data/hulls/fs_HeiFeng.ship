@@ -1,0 +1,92 @@
+{
+  "hullName": "黑锋",
+  "hullId": "fs_HeiFeng",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fs_HeiFeng.png",
+  "style": "HIGH_TECH",
+  "height": 32,
+  "width": 42,
+  "center": [21, 16],
+  "collisionRadius": 24,
+  "shieldCenter": [0, -0],
+  "shieldRadius": 24.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0001": "sabot_fighter",
+    "WS0002": "sabot_fighter",
+    "WS0003": "sabot_fighter",
+    "WS0004": "sabot_fighter"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [7, -11]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [7, 11]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-2, -17]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-2, 17]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-15, 10.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-15, -10.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-15.5, -0],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -12.5, -12,
+    1, -14.5,
+    11, -8.5,
+    11, 8.5,
+    1, 14.5,
+    -12.5, 12
+  ]
+}

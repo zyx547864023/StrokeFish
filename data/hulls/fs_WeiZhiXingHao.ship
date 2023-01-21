@@ -1,0 +1,156 @@
+{
+  "hullName": "未知型号",
+  "hullId": "fs_WeiZhiXingHao",
+  "hullSize": "DESTROYER",
+  "spriteName": "graphics/ships/fs_WeiZhiXingHao.png",
+  "style": "LOW_TECH",
+  "height": 142,
+  "width": 240,
+  "center": [120, 71],
+  "collisionRadius": 130,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 126.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0007": "fs_WeiZhiXingHao_ghost",
+    "WS0008": "fs_WeiZhiXingHao_ghost"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -90,
+      "locations": [-25, -52.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 90,
+      "locations": [-25, 52.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -42,
+      "locations": [-10, -59]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "HYBRID",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 42,
+      "locations": [-10, 59]
+    },
+    {
+      "id": "WS0005",
+      "size": "MEDIUM",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": -33.5,
+      "locations": [15, -49.5]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "COMPOSITE",
+      "mount": "TURRET",
+      "arc": 120,
+      "angle": 33.5,
+      "locations": [15, 49.5]
+    },
+    {
+      "id": "WS0007",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [29, 65.5]
+    },
+    {
+      "id": "WS0008",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [29, -65.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-53.5, 26],
+      "length": 64,
+      "width": 28,
+      "angle": 180,
+      "contrailSize": 28,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-53.5, -26],
+      "length": 64,
+      "width": 28,
+      "angle": -180,
+      "contrailSize": 28,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-51.5, 16.5],
+      "length": 46,
+      "width": 18,
+      "angle": 180,
+      "contrailSize": 18,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-51.5, -16.5],
+      "length": 46,
+      "width": 18,
+      "angle": -180,
+      "contrailSize": 18,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-50.5, 7.5],
+      "length": 39,
+      "width": 13,
+      "angle": 180,
+      "contrailSize": 13,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-50.5, -7.5],
+      "length": 39,
+      "width": 13,
+      "angle": -180,
+      "contrailSize": 13,
+      "style": "LOW_TECH"
+    }
+  ],
+  "bounds": [
+    -54.5, -26.5,
+    -68, -56,
+    -44, -63.5,
+    -39.5, -116.5,
+    54.5, -88,
+    67.5, -15,
+    67.5, 15,
+    54.5, 88,
+    -39.5, 116.5,
+    -44, 63.5,
+    -68, 56,
+    -54.5, 26.5
+  ]
+}

@@ -17,7 +17,7 @@
     "WS0003": "heavyac",
     "WS0004": "heavyac"
   },
-    "builtInWings": ["wasp_wing"],
+  "builtInWings": ["fs_HeiFeng_wing"],
   "weaponSlots": [
     {
       "id": "WS0001",

@@ -7,9 +7,12 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+<<<<<<< HEAD
     <orderEntry type="library" name="MagicLib" level="project" />
     <orderEntry type="library" name="jars" level="project" />
     <orderEntry type="library" name="Graphics" level="project" />
     <orderEntry type="library" name="starsector-core" level="project" />
+=======
+>>>>>>> 47627c301ce133ca2fda97e6e1159dc2b890a382
   </component>
 </module>

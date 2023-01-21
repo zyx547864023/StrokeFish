@@ -11,6 +11,9 @@
   "shieldCenter": [0, -0],
   "shieldRadius": 161.5,
   "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0003": "fs_DeLaiManNi_impact"
+  },
   "weaponSlots": [
     {
       "id": "WS0001",
@@ -114,11 +117,11 @@
     {
       "id": "WS0003",
       "size": "LARGE",
-      "type": "BALLISTIC",
+      "type": "BUILT_IN",
       "mount": "TURRET",
       "arc": 150,
       "angle": 0,
-      "locations": [54.5, -0]
+      "locations": [53.5, -0]
     },
     {
       "id": "WS0013",

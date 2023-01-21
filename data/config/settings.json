@@ -4,7 +4,12 @@
 			"fs_pshield1":"graphics/fx/fs_pshield_1.png",
 			"fs_pshield2":"graphics/fx/fs_pshield_2.png"
 		},
-		
+		"fs_beamsystem":{
+			"fs_bs_1":"graphics/fx/inhuoshipbeam/ring1.png",
+			"fs_bs_2":"graphics/fx/beamfringec.png",
+			"fs_bs_3":"graphics/fx/inhuoshipbeam/ball1.png",
+			"fs_bs_4":"graphics/fx/fs_beam_weave_core.png"
+		},
     },
     
 }

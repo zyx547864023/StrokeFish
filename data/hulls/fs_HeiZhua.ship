@@ -1,0 +1,82 @@
+{
+  "hullName": "黑爪",
+  "hullId": "fs_HeiZhua",
+  "hullSize": "FIGHTER",
+  "spriteName": "graphics/ships/fs_HeiZhua.png",
+  "style": "HIGH_TECH",
+  "height": 36,
+  "width": 36,
+  "center": [18, 18],
+  "collisionRadius": 22,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 21,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0001": "lightdualmg",
+    "WS0002": "lightdualmg",
+    "WS0003": "lightdualmg",
+    "WS0004": "lightdualmg"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [-3, 14.5]
+    },
+    {
+      "id": "WS0002",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [-3, -14.5]
+    },
+    {
+      "id": "WS0003",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [9, 5.5]
+    },
+    {
+      "id": "WS0004",
+      "size": "SMALL",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [9, -5.5]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-17.5, 6.5],
+      "length": 30,
+      "width": 10,
+      "angle": 180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-17.5, -6.5],
+      "length": 30,
+      "width": 10,
+      "angle": -180,
+      "contrailSize": 30,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -9.5, -13,
+    8, -6,
+    8, 6,
+    -9.5, 13
+  ]
+}

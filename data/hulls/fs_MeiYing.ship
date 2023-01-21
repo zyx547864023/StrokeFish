@@ -12,8 +12,6 @@
   "shieldRadius": 57.5,
   "viewOffset": 0,
   "builtInWeapons": {
-    "WS0001": "swp_lightninggun",
-    "WS0002": "swp_lightninggun"
   },
   "weaponSlots": [
     {

@@ -1,0 +1,61 @@
+{
+  "id": "fs_GeMing_5_missile",
+  "specClass": "projectile",
+  "projectileSpecId": "fs_GeMing_5_mrm",
+  "type": "MISSILE",
+  "size": "SMALL",
+  "turretSprite": "graphics/weapons/fs_GeMing/fs_GeMing_5_missile.png",
+  "hardpointSprite": "graphics/weapons/fs_GeMing/fs_GeMing_5_missile.png",
+  "renderHints": [
+    RENDER_LOADED_MISSILES
+  ],
+  "turretOffsets": [
+    10,
+    11.5,
+    10,
+    -4,
+    10,
+    4,
+    10,
+    -11.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    15,
+    -6,
+    15,
+    6,
+    15,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0,
+    0,
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "SMOKE",
+  "smokeSpec": {
+    "particleSizeMin": 20,
+    "particleSizeRange": 20,
+    "cloudParticleCount": 3,
+    "cloudDuration": 1,
+    "cloudRadius": 10,
+    "blowbackParticleCount": 3,
+    "blowbackDuration": 2,
+    "blowbackLength": 30,
+    "blowbackSpread": 10,
+    "particleColor": [
+      100,
+      100,
+      100,
+      200
+    ]
+  },
+  "fireSoundTwo": "harpoon_fire"
+}

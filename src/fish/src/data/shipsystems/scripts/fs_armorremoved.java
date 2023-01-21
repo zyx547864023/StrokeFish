@@ -14,6 +14,9 @@ public class fs_armorremoved extends BaseShipSystemScript {
     @Override
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
         ShipAPI ship = (ShipAPI) stats.getEntity();
+        if (ship == null) {
+            return;
+        }
         if(!init1){
             init1=true;
             step++;
@@ -23,7 +26,7 @@ public class fs_armorremoved extends BaseShipSystemScript {
             if(!init2) {
                 init2=true;
                 for (WeaponAPI a : ship.getAllWeapons()) {
-                        ;
+
                 }
             }
             }

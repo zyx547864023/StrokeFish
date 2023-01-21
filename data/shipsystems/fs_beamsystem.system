@@ -1,0 +1,14 @@
+{
+	"id":"fs_beamsystem",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.shipsystems.scripts.ai.fs_beamsystemai",
+	"statsScript":"data.shipsystems.scripts.fs_beamsystem",
+	
+	
+	
+	
+	"aiHints":{
+	
+	}
+}

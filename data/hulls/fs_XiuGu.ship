@@ -9,8 +9,12 @@
   "center": [70, 47],
   "collisionRadius": 79,
   "shieldCenter": [0, 0],
-  "shieldRadius": 0,
+  "shieldRadius": 77,
   "viewOffset": 0,
+  "builtInWings": [
+    "fs_XiuGuFighter_wing",
+    "fs_XiuGuFighter_wing"
+  ],
   "weaponSlots": [
     {
       "id": "WS0001",

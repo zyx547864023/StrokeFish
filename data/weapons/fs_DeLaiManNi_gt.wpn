@@ -1,0 +1,45 @@
+{
+  "id": "fs_DeLaiManNi_gt",
+  "specClass": "projectile",
+  "projectileSpecId": "chaingun_shot",
+  "type": "BALLISTIC",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/fs_DeLaiManNi/fs_DeLaiManNi_gt00.png",
+  "hardpointSprite": "graphics/weapons/fs_DeLaiManNi/fs_DeLaiManNi_gt00.png",
+  "turretOffsets": [
+    21,
+    18.5,
+    21,
+    -18.5
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    29,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "MUZZLE_FLASH",
+  "numFrames": 4,
+  "frameRate": 20,
+  "muzzleFlashSpec": {
+    "length": 35,
+    "spread": 5,
+    "particleSizeMin": 6,
+    "particleSizeRange": 14,
+    "particleDuration": 0.15,
+    "particleCount": 11,
+    "particleColor": [
+      255,
+      240,
+      165,
+      200
+    ]
+  },
+  "fireSoundTwo": "chaingun_fire"
+}

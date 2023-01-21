@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="fs_core">
+    <output-path>$PROJECT_DIR$/out/artifacts/fs_core</output-path>
+    <root id="archive" name="fs_core.jar" />
+  </artifact>
+</component>

@@ -1,0 +1,23 @@
+{
+  "variantId": "fs_WeiZhiXingHao_variant",
+  "hullId": "fs_WeiZhiXingHao",
+  "displayName": "New Variant",
+  "goalVariant": false,
+  "fluxCapacitors": 0,
+  "fluxVents": 0,
+  "quality": 1,
+  "permaMods": [],
+  "hullMods": [],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "fs_WeiZhiXingHao_ghost",
+        "WS0008": "fs_WeiZhiXingHao_ghost"
+      }
+    }
+  ],
+  "modules": [],
+  "wings": []
+}

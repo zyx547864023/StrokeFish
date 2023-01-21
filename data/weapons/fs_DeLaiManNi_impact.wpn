@@ -1,0 +1,50 @@
+{
+  "id": "fs_DeLaiManNi_impact",
+  "specClass": "projectile",
+  "projectileSpecId": "heavyblaster_shot",
+  "type": "ENERGY",
+  "size": "LARGE",
+  "turretSprite": "graphics/weapons/fs_DeLaiManNi/fs_DeLaiManNi_impact.png",
+  "turretGlowSprite": "graphics/weapons/fs_DeLaiManNi/fs_DeLaiManNi_impact_light.png",
+  "hardpointSprite": "graphics/weapons/fs_DeLaiManNi/fs_DeLaiManNi_impact.png",
+  "glowColor": [
+    100,
+    100,
+    255,
+    255
+  ],
+  "turretOffsets": [
+    13,
+    15,
+    13,
+    -15
+  ],
+  "turretAngleOffsets": [
+    0,
+    0
+  ],
+  "hardpointOffsets": [
+    15,
+    0
+  ],
+  "hardpointAngleOffsets": [
+    0
+  ],
+  "barrelMode": "ALTERNATING",
+  "animationType": "GLOW_AND_FLASH",
+  "muzzleFlashSpec": {
+    "length": 40,
+    "spread": 15,
+    "particleSizeMin": 20,
+    "particleSizeRange": 10,
+    "particleDuration": 0.12,
+    "particleCount": 12,
+    "particleColor": [
+      100,
+      100,
+      255,
+      255
+    ]
+  },
+  "fireSoundTwo": "heavy_blaster_fire"
+}

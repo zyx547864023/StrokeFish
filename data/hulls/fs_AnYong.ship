@@ -1,0 +1,129 @@
+{
+  "hullName": "暗涌",
+  "hullId": "fs_AnYong",
+  "hullSize": "FRIGATE",
+  "spriteName": "graphics/ships/fs_AnYongP.png",
+  "style": "HIGH_TECH",
+  "height": 99,
+  "width": 154,
+  "center": [77, 49.5],
+  "collisionRadius": 84.5,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 82.5,
+  "viewOffset": 0,
+  "builtInWeapons": {
+    "WS0001": "cryoflux",
+    "WS0002": "cryoflux",
+    "WS0003": "cryoblaster",
+    "WS0004": "cryoblaster"
+  },
+  "weaponSlots": [
+    {
+      "id": "WS0001",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": 0,
+      "locations": [16, 36]
+    },
+    {
+      "id": "WS0002",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 15,
+      "angle": -0,
+      "locations": [16, -36]
+    },
+    {
+      "id": "WS0003",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": 0,
+      "locations": [12, 15]
+    },
+    {
+      "id": "WS0004",
+      "size": "MEDIUM",
+      "type": "BUILT_IN",
+      "mount": "HIDDEN",
+      "arc": 0,
+      "angle": -0,
+      "locations": [12, -15]
+    },
+    {
+      "id": "WS0005",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 0,
+      "locations": [22, -0]
+    },
+    {
+      "id": "WS0006",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": -180,
+      "locations": [-40.5, 35]
+    },
+    {
+      "id": "WS0007",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "TURRET",
+      "arc": 0,
+      "angle": 180,
+      "locations": [-40.5, -35]
+    }
+  ],
+  "engineSlots": [
+    {
+      "location": [-49, 22],
+      "length": 71,
+      "width": 35,
+      "angle": 180,
+      "contrailSize": 35,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-49, -22],
+      "length": 71,
+      "width": 35,
+      "angle": -180,
+      "contrailSize": 35,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-31.5, 52.5],
+      "length": 58,
+      "width": 26,
+      "angle": 180,
+      "contrailSize": 26,
+      "style": "HIGH_TECH"
+    },
+    {
+      "location": [-31.5, -52.5],
+      "length": 58,
+      "width": 26,
+      "angle": -180,
+      "contrailSize": 26,
+      "style": "HIGH_TECH"
+    }
+  ],
+  "bounds": [
+    -48.5, -26.5,
+    -10.5, -76,
+    50, -34,
+    29.5, -20.5,
+    29.5, 20.5,
+    50, 34,
+    -10.5, 76,
+    -48.5, 26.5
+  ]
+}

@@ -19,27 +19,32 @@ name,id,tier,rarity,base value,range,damage/second,damage/shot,emp,impact,turn r
 革命尾部装甲,fs_GeMing_bottom_cover,,,,,,,,,,,,,,,,,,10,,,,,,,,,,,,,,SYSTEM,,,,,,,,,,,,,,,
 天盾滚轴,fs_TianDun_cover,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #内置武器,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-革命肩部导弹,fs_GeMing_shoulder_missile,1,,200,2500,,750,,15,30,4,3,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,,,300,100,12.5,150,,,DO_NOT_AIM,"missile8, strike3, missile_bp, merc",,,,终结打击,普通,普通,,,,,,,TRUE,11.5
-革命裆部导弹,fs_GeMing_dick_missile,1,,200,2500,,750,,15,30,4,3,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,,,300,100,12.5,150,,,DO_NOT_AIM,"missile8, strike3, missile_bp, merc",,,,终结打击,普通,普通,,,,,,,TRUE,11.5
-革命导弹3,fs_GeMing_3_missile,1,,200,2500,,750,,15,30,4,3,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,,,300,100,12.5,150,,,DO_NOT_AIM,"missile8, strike3, missile_bp, merc",,,,终结打击,普通,普通,,,,,,,TRUE,11.5
-革命导弹4,fs_GeMing_4_missile,1,,200,2500,,750,,15,30,4,2,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,,,300,100,12.5,150,,,DO_NOT_AIM,"missile8, strike3, missile_bp, merc",,,,终结打击,普通,普通,,,,,,,TRUE,11.5
-革命导弹5,fs_GeMing_5_missile,1,,200,2500,,750,,15,30,4,4,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,,,300,100,12.5,150,,,DO_NOT_AIM,"missile8, strike3, missile_bp, merc",,,,终结打击,普通,普通,,,,,,,TRUE,11.5
+革命肩部导弹,fs_GeMing_shoulder_missile,1,,300,2500,,1500,,15,30,0,3,,,HIGH_EXPLOSIVE,0,,0,1,3,,0,0,0,,,500,50,20,1000,,,"SYSTEM, DO_NOT_AIM","missile8, strike3, missile_bp, merc",,,,终结打击,普通,普通,,,,,,,TRUE,11.5
+#革命裆部导弹,fs_GeMing_dick_missile,1,,200,2500,,1500,,15,30,0,1,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,,,400,100,20,1000,,,"SYSTEM, DO_NOT_AIM","missile8, strike3, missile_bp, merc",,,,终结打击,普通,普通,,,,,,,TRUE,11.5
+#革命导弹3,fs_GeMing_3_missile,1,,200,2500,,1500,,15,30,0,1,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,,,400,100,20,1000,,,"SYSTEM, DO_NOT_AIM","missile8, strike3, missile_bp, merc",,,,终结打击,普通,普通,,,,,,,TRUE,11.5
+#革命导弹4,fs_GeMing_4_missile,1,,200,2500,,1500,,15,30,0,1,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,,,400,100,20,1000,,,"SYSTEM, DO_NOT_AIM","missile8, strike3, missile_bp, merc",,,,终结打击,普通,普通,,,,,,,TRUE,11.5
+#革命导弹5,fs_GeMing_5_missile,1,,200,2500,,1500,,15,30,0,1,,,HIGH_EXPLOSIVE,0,,0,1,1,,0,0,0,,,400,100,20,1000,,,"SYSTEM, DO_NOT_AIM","missile8, strike3, missile_bp, merc",,,,终结打击,普通,普通,,,,,,,TRUE,11.5
+革命裆部导弹,fs_GeMing_dick_missile,1,,1200,1500,,4000,,75,20,0,3,,,HIGH_EXPLOSIVE,0,,0,1,3,,0,0,0,0,,400,50,3.5,1500,,,"SYSTEM, STRIKE","strike13, rocket8, missile_bp, merc",,,,鱼雷,较快,无,,,,,,,TRUE,14
+革命导弹5,fs_GeMing_5_missile,0,,900,4000,,500,500,25,20,0,8,,,FRAGMENTATION,0,,0,1,8,,0,0,0,0,,500,100,30,300,,,"SYSTEM, DO_NOT_AIM, CONSERVE_1","utility13, missile7, missile_bp, merc",,,,远程支援,普通,很差,,,在第二阶段下命中护盾时，将根据目标硬幅能水平，产生穿透护盾打击武器与引擎的电弧，并造成 %s EMP。,500,,,,12.5
+#革命导弹4,fs_GeMing_4_missile,1,,225,2000,,100,1500,15,30,0,2,,,FRAGMENTATION,0,,0,1,2,,0,0,0,,,700,50,15,150,,,"SYSTEM, DO_NOT_AIM, HEATSEEKER","utility13, missile0, missile_bp, merc",,,,反引擎,较快,优秀,,,,,,,TRUE,11.25
+革命导弹3,fs_GeMing_3_missile,0,,200,1500,,100,,15,30,0,3,,,KINETIC,0,,0,1,3,,0,0,0,0,,1000,50,8,500,,,"SYSTEM, GUIDED_POOR","missile6, strike0, base_bp",,,,反护盾,较快,较差,,,当命中船体或装甲时，有 %s 的概率产生打击武器与引擎的电弧，并造成 %s EMP。,25% | 200,,,TRUE,11.85
+革命导弹4,fs_GeMing_4_missile,2,0.7,7500,5000,,900,900,20,10,0,2,,,ENERGY,0,,0,1,2,,0,0,0,0,,800,150,25,500,,,"SYSTEM, DO_NOT_AIM, CONSERVE_1, HEATSEEKER","missile20, strike13, utility15, rare_bp, hist1t, merc",,,,远程支援 (范围),较快,普通,,,击中物体时对大范围内的舰船和战机造成 900 能量伤害以及 900 EMP 伤害。,900 | 900,,,,4359
 #内置武器,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-锤心炮,fs_ChuiXin_cannon,2,,2500,600,,500,,0,15,12,,,,ENERGY,720,,0,1,,,,,,,,1000,,,,,,,"energy14, rare_bp, hist1t, merc",,,,通用,,,,,,,,,,22.25
-锤心链炮,fs_ChuiXin_chain,1,,1000,450,,75,,3,30,10,,,,HIGH_EXPLOSIVE,60,,0,0.15,1,,0,20,1,10,,800,,,30,,,,"he15, SR, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,4.5
+锤心炮,fs_ChuiXin_cannon,2,,2500,600,,500,,0,15,0,,,,ENERGY,720,,0,1,,,,,,,,1000,,,,,,SYSTEM,"energy14, rare_bp, hist1t, merc",,,,通用,,,,,,,,,,22.25
+锤心链炮,fs_ChuiXin_chain,1,,2500,550,,75,,3,30,0,,,,HIGH_EXPLOSIVE,60,,0,0.15,1,,0,20,1,10,,800,,,30,,,SYSTEM,"he15, SR, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,4.5
 #内置武器,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-德莱盖特,fs_DeLaiManNi_gt,3,0.3,2000,1000,,200,,10,20,12,,,,HIGH_EXPLOSIVE,200,,0,4.4,3,0.3,0,5,1,10,,900,,,30,,,,"he16, LR, remnant, rare_bp, merc",,,,反装甲,,,,,,,,,,4.75
-德莱冲击波,fs_DeLaiManNi_impact,2,,2500,600,,500,,0,15,12,,,,ENERGY,720,,0,1,,,,,,,,1000,,,,,,,"energy14, rare_bp, hist1t, merc",,,,通用,,,,,,,,,,22.25
-德莱三联炮,fs_DeLaiManNi_trebie,1,,3500,900,,150,,40,12,20,,,,HIGH_EXPLOSIVE,75,,0,2,12,0.1,5,30,5,5,,700,,,100,,,"PD,PD_ALSO","he16, pd14, lowtech_bp, merc",,,,反战机 (范围性),,,,,"每一枚炮弹均内置了不稳定引信，而导致其可能在射程距离内提前爆炸，因此距离越近威力越大。
-
-如果射程内没有敌舰，则优先瞄准来袭的导弹。",,,,,7.4
+德莱盖特,fs_DeLaiManNi_gt,3,,3500,800,,45,,20,25,0,,,,KINETIC,55,,0.025,0.025,2,0.2,0,5,1,10,,1000,,,30,,,SYSTEM,"he16, LR, remnant, rare_bp, merc",,,,反护盾,,,,,随着武器持续开火时间的增加，武器的射速将会进行两次{%s}，分别增加{%s}与{%s}，并相应降低少量幅能产生。,跃升 | 50% | 150%,,,,4.75
+德莱冲击波,fs_DeLaiManNi_impact,2,,3500,1000,,390,,25,15,0,,,,HIGH_EXPLOSIVE,430,,0.25,1.75,,,,,,,,800,,,500,,,SYSTEM,"rare_bp, hist1t, merc",,,,反装甲,,,,,当武器弹体命中目标舰体时，特殊频率的冲击振动会影响目标装甲的坚固程度，使目标{%s}内装甲最大减免减少{%s}。,3秒 | 30%,,,,22.25
+德莱三联炮,fs_DeLaiManNi_trebie,1,,3500,900,,60,,10,12,0,,,,FRAGMENTATION,27,,0.01,0.01,3,0.04,3,15,0.5,5,,900,,,30,,,SYSTEM,he16,,,,反结构,,,,,,,,,,7.4
 #内置武器,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-天盾左线圈炮,fs_TianDunXianQuan_left,1,,1000,500,,200,,10,40,8,,,,FRAGMENTATION,50,,0,1,1,,0,10,2,10,,700,,,30,,,PD,"pd13, SR, lowtech_bp, merc",,,,点防御 (范围性),,,,,,,,,,4
-天盾左突击炮,fs_TianDun_TuJi_left,1,,4000,900,,120,,5,20,20,,,,HIGH_EXPLOSIVE,120,,0,0.25,1,,0,10,2,10,,800,,,50,,,,"he18, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,7
-天盾右线圈炮,fs_TianDunXianQuan_right,1,,1000,500,,200,,10,40,8,,,,FRAGMENTATION,50,,0,1,1,,0,10,2,10,,700,,,30,,,PD,"pd13, SR, lowtech_bp, merc",,,,点防御 (范围性),,,,,,,,,,4
-天盾右突击炮,fs_TianDun_TuJi_right,1,,4000,900,,120,,5,20,20,,,,HIGH_EXPLOSIVE,120,,0,0.25,1,,0,10,2,10,,800,,,50,,,,"he18, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,7
+天盾左线圈炮,fs_TianDunXianQuan_left,1,,4000,900,,200,,10,40,0,,,,KINETIC,50,,0,1,1,,0,10,2,10,,1000,,,30,,,"SYSTEM, PD","pd13, SR, lowtech_bp, merc",,,,点防御 (范围性),,,,,,,,,,4
+天盾左突击炮,fs_TianDun_TuJi_left,1,,4000,800,,120,,5,20,0,,,,HIGH_EXPLOSIVE,120,,0,0.25,1,,0,10,2,10,,900,,,50,,,,"he18, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,7
+天盾右线圈炮,fs_TianDunXianQuan_right,1,,4000,900,,200,,10,40,0,,,,KINETIC,50,,0,1,1,,0,10,2,10,,1000,,,30,,,"SYSTEM, PD","pd13, SR, lowtech_bp, merc",,,,点防御 (范围性),,,,,,,,,,4
+天盾右突击炮,fs_TianDun_TuJi_right,1,,4000,800,,120,,5,20,0,,,,HIGH_EXPLOSIVE,120,,0,0.25,1,,0,10,2,10,,900,,,50,,,,"he18, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,7
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 #内置武器,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-幽魂炮,fs_WeiZhiXingHao_ghost,0,,3000,900,,750,,200,5,16,,,,HIGH_EXPLOSIVE,750,,0,3,1,,0,10,5,10,,500,,,400,,,,"he18, lowtech_bp, merc",,,,反装甲,,,,,,,,,,8
+幽魂炮,fs_WeiZhiXingHao_ghost,0,,3000,900,,750,,200,5,0,,,,HIGH_EXPLOSIVE,750,,0,3,1,,0,10,5,10,,500,,,400,,,SYSTEM,"he18, lowtech_bp, merc",,,,反装甲,,,,,,,,,,8
 #内置武器,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-锈铳炮,fs_XiuChong_gun,1,,4000,900,,120,,5,20,20,,,,HIGH_EXPLOSIVE,120,,0,0.25,1,,0,10,2,10,,800,,,50,,,,"he18, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,7
+锈铳炮,fs_XiuChong_gun,1,,4000,1200,,800,,5,20,0,,,,KINETIC,120,,0,1,1,,0,10,2,10,,800,,,500,,,SYSTEM,"he18, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,7
+锈铳炮（散开）,fs_XiuChong_gun_scatter,1,,4000,1200,,800,,5,20,0,,,,KINETIC,120,,0,1,1,,0,10,2,10,,1000,1000,3,500,,,,"he18, lowtech_bp, midline_bp, merc",,,,反装甲,,,,,,,,,,7
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

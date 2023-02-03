@@ -1,0 +1,18 @@
+{
+	"id":"fs_XiuChong_shot_scatter_3",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FIGHTER",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	"glowColor":[255,230,50,90],
+	"glowRadius":25,
+	"length":50.0,
+	"width":3.5,
+	"hitGlowRadius":35,
+	"fadeTime":0.1,
+	"fringeColor":[255,230,50,155],
+	"coreColor":[255,230,170,180],
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/weapons/fs_XiuChong/fs_XiuChong_shot3.png",
+}

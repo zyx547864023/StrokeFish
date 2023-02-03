@@ -5,12 +5,12 @@
 	"collisionClass":"PROJECTILE_FF",
 	"collisionClassByFighter":"PROJECTILE_FIGHTER",
 	"length":40.0,
-	"hitGlowRadius":48,
+	"hitGlowRadius":80,
 	"width":40.0,
-	"fadeTime":0.175,
-	"fringeColor":[255,230,50,155],
-	"coreColor":[255,230,170,180],
+	"fadeTime":0.1,
+	"fringeColor":[255,255,255,80],
+	"coreColor":[255,255,255,255],
 	"textureScrollSpeed":64.0,
-	"pixelsPerTexel":5.0,
+	"pixelsPerTexel":1.0,
 	"bulletSprite":"graphics/weapons/fs_XiuChong/fs_XiuChong_shot.png"
-}
+} 

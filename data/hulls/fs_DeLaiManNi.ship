@@ -12,8 +12,10 @@
   "shieldRadius": 161.5,
   "viewOffset": 0,
   "builtInWeapons": {
-    "WS0003": "fs_DeLaiManNi_impact"
   },
+  "builtInMods": [
+     "fs_delaiweaponchange"
+  ],
   "weaponSlots": [
     {
       "id": "WS0001",
@@ -115,7 +117,7 @@
       "locations": [-66.5, 0]
     },
     {
-      "id": "WS0003",
+      "id": "Fs_delaislot",
       "size": "LARGE",
       "type": "BUILT_IN",
       "mount": "TURRET",

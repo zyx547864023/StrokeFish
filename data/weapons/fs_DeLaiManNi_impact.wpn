@@ -1,9 +1,5 @@
 {
   "id": "fs_DeLaiManNi_impact",
-  "specClass": "projectile",
-  "projectileSpecId": "heavyblaster_shot",
-  "type": "ENERGY",
-  "size": "LARGE",
   "turretSprite": "graphics/weapons/fs_DeLaiManNi/fs_DeLaiManNi_impact.png",
   "turretGlowSprite": "graphics/weapons/fs_DeLaiManNi/fs_DeLaiManNi_impact_light.png",
   "hardpointSprite": "graphics/weapons/fs_DeLaiManNi/fs_DeLaiManNi_impact.png",
@@ -30,21 +26,23 @@
   "hardpointAngleOffsets": [
     0
   ],
+  "specClass": "projectile",
+  "type": "BALLISTIC",
+  "size": "LARGE",
   "barrelMode": "ALTERNATING",
-  "animationType": "GLOW_AND_FLASH",
-  "muzzleFlashSpec": {
-    "length": 40,
-    "spread": 15,
-    "particleSizeMin": 20,
-    "particleSizeRange": 10,
-    "particleDuration": 0.12,
-    "particleCount": 12,
-    "particleColor": [
-      100,
-      100,
-      255,
-      255
-    ]
-  },
-  "fireSoundTwo": "heavy_blaster_fire"
+ #"animationType":"GLOW",
+	"animationType":"MUZZLE_FLASH",
+	"muzzleFlashSpec":{"length":20.0,   # only used if animationType = MUZZLE_FLASH
+					   "spread":6.0,
+					   "particleSizeMin":6.0,
+					   "particleSizeRange":8.0,
+					   "particleDuration":0.15,
+					   "particleCount":7,
+					   "particleColor":[255,240,165,200]},		
+	"autocharge":true,
+	#"interruptibleBurst":true,
+	"projectileSpecId":"fs_Delaiimpactproj",  # projectile that will be fired
+	#"fireSoundOne":"cr_allied_malfunction",
+	"fireSoundTwo":"autopulse_laser_fire",
+}
 }

@@ -1,7 +1,8 @@
 {
   "id": "fs_DeLaiManNi_gt",
   "specClass": "projectile",
-  "projectileSpecId": "chaingun_shot",
+  "projectileSpecId": "fs_Delaigtproj",
+  "everyFrameEffect":"data.weapons.fs_Delaigteffect",
   "type": "BALLISTIC",
   "size": "LARGE",
   "turretSprite": "graphics/weapons/fs_DeLaiManNi/fs_DeLaiManNi_gt00.png",
@@ -28,17 +29,14 @@
   "numFrames": 4,
   "frameRate": 20,
   "muzzleFlashSpec": {
-    "length": 35,
-    "spread": 5,
+    "length": 30,
+    "spread": 10,
     "particleSizeMin": 6,
     "particleSizeRange": 14,
     "particleDuration": 0.15,
-    "particleCount": 11,
+    "particleCount": 10,
     "particleColor": [
-      255,
-      240,
-      165,
-      200
+      72, 171, 88, 218
     ]
   },
   "fireSoundTwo": "chaingun_fire"

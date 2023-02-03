@@ -1,0 +1,18 @@
+{
+	"id":"fs_Delaiimpactproj",
+	"specClass":"projectile",
+                 "onHitEffect":"data.weapons.fs_Delaiimpecthiteffect",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":160,
+	"width":15,
+	"fadeTime":0.15,
+	"fringeColor":[13,255,159,255],
+	"coreColor":[0,255,221,255],
+	 "passThroughMissiles":true,
+                 "textureType":["graphics/fx/beamcorec.png","graphics/fx/emp_arcs.png"],
+	"textureScrollSpeed":-1,
+	"pixelsPerTexel":1.0,
+	
+}

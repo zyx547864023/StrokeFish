@@ -12,7 +12,6 @@
   "shieldRadius": 170,
   "viewOffset": 0,
   "builtInWeapons": {
-    "WS0009": "fs_XiuChong_gun",
     "WS0011": "fs_XiuChong_gun"
   },
   "weaponSlots": [

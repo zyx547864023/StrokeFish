@@ -15,10 +15,10 @@ name,id,tier,rarity,tech/manufacturer,tags,uiTags,base value,unlocked,hidden,hid
 ,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,
+德莱盖特,fs_delaiweapon1,,,摸鱼船包,"defensive,no_drop,no_sell,no_drop_salvage",,,FALSE,FALSE,,0,0,0,0,data.hullmods.fs_delaiweapon1,点击调整当前内置主炮。,武器切换,graphics/icons/fs_1.png
+德莱冲击波,fs_delaiweapon2,,,摸鱼船包,"defensive,no_drop,no_sell,no_drop_salvage",,,FALSE,FALSE,,0,0,0,0,data.hullmods.fs_delaiweapon2,点击调整当前内置主炮。,武器切换,graphics/icons/fs_1.png
+德莱三联炮,fs_delaiweapon3,,,摸鱼船包,"defensive,no_drop,no_sell,no_drop_salvage",,,FALSE,FALSE,,0,0,0,0,data.hullmods.fs_delaiweapon3,点击调整当前内置主炮。,武器切换,graphics/icons/fs_1.png
+德莱核心,fs_delaiweaponchange,,,摸鱼船包,"defensive,no_drop,no_sell,no_drop_salvage",,,FALSE,TRUE,,0,0,0,0,data.hullmods.fs_delaiweaponchange,此舰船拥有成体系的武器结构，可以在三种内置武器中随意切换。,武器切换,graphics/icons/fs_1.png
 ,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,

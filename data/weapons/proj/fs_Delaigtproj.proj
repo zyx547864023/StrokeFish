@@ -1,0 +1,29 @@
+{
+	"id":"fs_Delaigtproj",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC",
+	"collisionClass":"PROJECTILE_FF",
+	"collisionClassByFighter":"PROJECTILE_FIGHTER",
+	
+	#"length":100.0,
+	#"width":5,
+	#"hitGlowRadius":25,
+	#"fadeTime":0.15,
+	#"fringeColor":[255,255,255,255],
+	#"coreColor":[255,255,255,155],	
+	#"textureScrollSpeed":64.0,
+	#"pixelsPerTexel":5.0,
+	#"bulletSprite":"graphics/missiles/flechette_med.png"
+	
+	"length":100.0,
+	"width":4,
+	"hitGlowRadius":25,
+	"fadeTime":0.15,
+	#"fringeColor":[255,155,125,255],
+	#"coreColor":[255,255,200,150],
+	"fringeColor":[151, 255, 168, 255],
+	"coreColor":[255, 42, 0, 255],	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/flechette_sml.png"
+}

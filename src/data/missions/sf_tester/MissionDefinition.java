@@ -37,11 +37,17 @@ public class MissionDefinition implements MissionDefinitionPlugin {
         // files in data/variants and data/variants/fighters
         //api.addToFleet(FleetSide.PLAYER, "station_small_Standard", FleetMemberType.SHIP, "Test Station", false);
         if (!testMode) {
+            api.addToFleet(FleetSide.PLAYER, "fs_MeiYing_variant", FleetMemberType.SHIP, "魅影", false);
+            api.addToFleet(FleetSide.PLAYER, "fs_MeiYing_variant", FleetMemberType.SHIP, "魅影", false);
+
             api.addToFleet(FleetSide.PLAYER, "fs_AnYong_variant", FleetMemberType.SHIP, "暗涌", true);
+            api.addToFleet(FleetSide.PLAYER, "fs_BaWangA7_variant", FleetMemberType.SHIP, "霸王A7", true);
             api.addToFleet(FleetSide.PLAYER, "fs_BaWangA7_variant", FleetMemberType.SHIP, "霸王A7", true);
             api.addToFleet(FleetSide.PLAYER, "fs_ShaYiXi_variant", FleetMemberType.SHIP, "沙翼蜥", true);
             api.addToFleet(FleetSide.PLAYER, "fs_WeiZhiXingHao_variant", FleetMemberType.SHIP, "未知型号", true);
             api.addToFleet(FleetSide.PLAYER, "fs_XiuChong_variant", FleetMemberType.SHIP, "锈铳", true);
+            api.addToFleet(FleetSide.PLAYER, "fs_XiuChong_variant", FleetMemberType.SHIP, "锈铳", true);
+            api.addToFleet(FleetSide.PLAYER, "fs_ChuiXinZhe_variant", FleetMemberType.SHIP, "锤心者", true);
             api.addToFleet(FleetSide.PLAYER, "fs_ChuiXinZhe_variant", FleetMemberType.SHIP, "锤心者", true);
 
             api.addToFleet(FleetSide.PLAYER, "fs_AnYongZhongPaoShou_variant", FleetMemberType.SHIP, "暗涌重炮手", true);
@@ -52,21 +58,25 @@ public class MissionDefinition implements MissionDefinitionPlugin {
             api.addToFleet(FleetSide.PLAYER, "fs_DeLaiManNi_trebie_variant", FleetMemberType.SHIP, "德莱曼妮", false);
 
             api.addToFleet(FleetSide.PLAYER, "fs_GeMing_variant", FleetMemberType.SHIP, "革命", false);
+            api.addToFleet(FleetSide.PLAYER, "fs_GeMing_variant", FleetMemberType.SHIP, "革命", false);
             api.addToFleet(FleetSide.PLAYER, "fs_HaiDeLa_variant", FleetMemberType.SHIP, "海德拉", false);
             api.addToFleet(FleetSide.PLAYER, "fs_HaiShi_variant", FleetMemberType.SHIP, "海使", false);
             api.addToFleet(FleetSide.PLAYER, "fs_HeiLang_variant", FleetMemberType.SHIP, "黑狼", false);
             api.addToFleet(FleetSide.PLAYER, "fs_HeiYing_variant", FleetMemberType.SHIP, "黑鹰", false);
             api.addToFleet(FleetSide.PLAYER, "fs_HeiZhu_variant", FleetMemberType.SHIP, "黑蛛", false);
-            api.addToFleet(FleetSide.PLAYER, "fs_MeiYing_variant", FleetMemberType.SHIP, "魅影", false);
+
+            api.addToFleet(FleetSide.PLAYER, "fs_RouLing_variant", FleetMemberType.SHIP, "蹂躏", false);
             api.addToFleet(FleetSide.PLAYER, "fs_RouLing_variant", FleetMemberType.SHIP, "蹂躏", false);
 
             api.addToFleet(FleetSide.PLAYER, "fs_TianDun_TuJi_variant", FleetMemberType.SHIP, "天盾", false);
             api.addToFleet(FleetSide.PLAYER, "fs_TianDunXianQuan_variant", FleetMemberType.SHIP, "天盾", false);
 
             api.addToFleet(FleetSide.PLAYER, "fs_XiuGu_variant", FleetMemberType.SHIP, "锈骨", false);
+            api.addToFleet(FleetSide.PLAYER, "fs_XiuGu_variant", FleetMemberType.SHIP, "锈骨", false);
             api.addToFleet(FleetSide.PLAYER, "fs_XiuShi_variant", FleetMemberType.SHIP, "锈侍", false);
             api.addToFleet(FleetSide.PLAYER, "fs_XiuZhe_variant", FleetMemberType.SHIP, "锈者", false);
             api.addToFleet(FleetSide.PLAYER, "fs_XiuZhong_variant", FleetMemberType.SHIP, "锈种", false);
+            api.addToFleet(FleetSide.PLAYER, "fs_ZhenZhu_variant", FleetMemberType.SHIP, "珍珠", false);
             api.addToFleet(FleetSide.PLAYER, "fs_ZhenZhu_variant", FleetMemberType.SHIP, "珍珠", false);
             api.addToFleet(FleetSide.PLAYER, "fs_ZhuBei_variant", FleetMemberType.SHIP, "珠贝1", false);
             api.addToFleet(FleetSide.PLAYER, "fs_ZhuBei_variant", FleetMemberType.SHIP, "珠贝2", false);

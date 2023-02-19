@@ -16,6 +16,6 @@ public class Fs_hullsizeint {
         else if(target.isFrigate()){
             return 1;
         }
-        else return 0;
+        else return 0;//返回值为与目标舰船型号挂钩的int值，从小到大，从1到4。
     }
 }

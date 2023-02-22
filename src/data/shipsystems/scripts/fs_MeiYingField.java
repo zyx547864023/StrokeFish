@@ -198,6 +198,7 @@ public class fs_MeiYingField extends BaseShipSystemScript {
         public boolean isExpired() {
             if(timer >= 5f)
             {
+                List<MissileAPI> removeMissile = new ArrayList<>();
                 for (MissileAPI missileAPI : destroyMap.keySet()) {
                     Vector2f oldLocation = missileAPI.getLocation();
                     if(MathUtils.getDistance(leftPonit, missileAPI.getLocation()) <= deviation||MathUtils.getDistance(rightPonit, missileAPI.getLocation()) <= deviation) {
@@ -215,16 +216,20 @@ public class fs_MeiYingField extends BaseShipSystemScript {
                                             MissileAPI newMissile = (MissileAPI) newProjectile;
                                             engine.applyDamageModifiersToSpawnedProjectileWithNullWeapon(
                                                     ship, WeaponAPI.WeaponType.MISSILE, false, newMissile.getDamage());
-                                            engine.removeObject(missileAPI);
+                                            //engine.removeObject(missileAPI);
+                                            removeMissile.add(missileAPI);
                                         }catch (Exception e)
                                         {
                                             Global.getLogger(this.getClass()).info(e);
                                         }
-
                                     }
                                 }
                             }
                     }
+                }
+                for(MissileAPI missileAPI : removeMissile)
+                {
+                    engine.removeObject(missileAPI);
                 }
             }
             return timer >= 5f;

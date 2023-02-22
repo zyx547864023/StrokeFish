@@ -3,7 +3,7 @@
   "hullId": "fs_TianDun",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
+  "fluxCapacitors": 25,
   "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
@@ -15,6 +15,40 @@
       "weapons": {
         "WS0014": "fs_TianDunXianQuan_left",
         "WS0015": "fs_TianDunXianQuan_right"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "heavyneedler",
+        "WS0008": "heavyneedler",
+        "WS0009": "heavyneedler",
+        "WS0010": "heavyneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "devastator",
+        "WS0006": "devastator"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "harpoonpod",
+        "WS0002": "harpoonpod"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "heatseeker",
+        "WS0004": "heatseeker"
       }
     }
   ],

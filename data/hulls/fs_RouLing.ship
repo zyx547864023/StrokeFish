@@ -16,7 +16,7 @@
       "id": "WS0001",
       "size": "SMALL",
       "type": "UNIVERSAL",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 20,
       "angle": 0,
       "locations": [25.5, 49]
@@ -25,7 +25,7 @@
       "id": "WS0002",
       "size": "SMALL",
       "type": "UNIVERSAL",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 20,
       "angle": -0,
       "locations": [25.5, -49]
@@ -33,8 +33,8 @@
     {
       "id": "WS0003",
       "size": "SMALL",
-      "type": "UNIVERSAL",
-      "mount": "TURRET",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
       "arc": 20,
       "angle": -0,
       "locations": [52.5, -26]
@@ -42,8 +42,8 @@
     {
       "id": "WS0004",
       "size": "SMALL",
-      "type": "UNIVERSAL",
-      "mount": "TURRET",
+      "type": "HYBRID",
+      "mount": "HARDPOINT",
       "arc": 20,
       "angle": 0,
       "locations": [52.5, 26]

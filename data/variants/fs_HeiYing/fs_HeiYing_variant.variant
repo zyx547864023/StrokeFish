@@ -3,11 +3,17 @@
   "hullId": "fs_HeiYing",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 10,
+  "fluxVents": 8,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [    
+	"safetyoverrides",
+    "fluxcoil",
+    "fluxdistributor",
+    "unstable_injector",
+    "extendedshieldemitter"
+	],
   "weaponGroups": [
     {
       "autofire": false,

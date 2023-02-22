@@ -7,7 +7,9 @@
   "collisionClassByFighter": "RAY_FIGHTER",
   "turretSprite": "graphics/weapons/fs_TianDun/fs_TianDun_cover00.png",
   "hardpointSprite": "graphics/weapons/fs_TianDun/fs_TianDun_cover00.png",
-  "numFrames": 6,
+  "numFrames": 13,
+  "frameRate":39,
+  "alwaysAnimate":true,
   "renderAboveAllWeapons": true,
   "glowColor": [
     255,

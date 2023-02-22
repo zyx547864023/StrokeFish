@@ -3,8 +3,8 @@
   "hullId": "fs_ShaYiXi",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 30,
+  "fluxVents": 30,
   "quality": 1,
   "permaMods": [],
   "hullMods": [],
@@ -13,10 +13,37 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0012": "ionpulser",
-        "WS0013": "ionpulser",
-        "WS0014": "ionpulser",
-        "WS0015": "ionpulser"
+        "WS0012": "fs_tpc",
+        "WS0013": "fs_tpc"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lightneedler",
+        "WS0008": "lightneedler",
+        "WS0009": "lightneedler",
+        "WS0010": "lightneedler",
+        "WS0011": "hephag"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0003": "sabot",
+        "WS0004": "sabot",
+        "WS0005": "sabot",
+        "WS0006": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "heavyburst",
+        "WS0002": "heavyburst"
       }
     }
   ],

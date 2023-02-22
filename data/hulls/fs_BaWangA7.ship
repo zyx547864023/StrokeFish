@@ -1,7 +1,7 @@
 {
   "hullName": "霸王A7",
   "hullId": "fs_BaWangA7",
-  "hullSize": "CRUISER",
+  "hullSize": "CAPITAL_SHIP",
   "spriteName": "graphics/ships/fs_BaWangA7.png",
   "style": "LOW_TECH",
   "height": 242,

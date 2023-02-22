@@ -12,6 +12,8 @@
   "shieldRadius": 57.5,
   "viewOffset": 0,
   "builtInWeapons": {
+    "WS0001": "fs_MeiYing_lightninggun",
+    "WS0002": "fs_MeiYing_lightninggun"
   },
   "weaponSlots": [
     {

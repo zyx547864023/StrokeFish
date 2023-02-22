@@ -3,11 +3,14 @@
   "hullId": "fs_WeiZhiXingHao",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 20,
+  "fluxVents": 20,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "fluxcoil",
+    "fluxdistributor"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
@@ -15,6 +18,24 @@
       "weapons": {
         "WS0007": "fs_WeiZhiXingHao_ghost",
         "WS0008": "fs_WeiZhiXingHao_ghost"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "chaingun",
+        "WS0006": "chaingun"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "pdlaser",
+        "WS0002": "pdlaser",
+        "WS0003": "pdlaser",
+        "WS0004": "pdlaser"
       }
     }
   ],

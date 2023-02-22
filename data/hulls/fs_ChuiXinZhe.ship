@@ -1,7 +1,7 @@
 {
   "hullName": "锤心者",
   "hullId": "fs_ChuiXinZhe",
-  "hullSize": "CRUISER",
+  "hullSize": "CAPITAL_SHIP",
   "spriteName": "graphics/ships/fs_ChuiXinZhe.png",
   "style": "LOW_TECH",
   "height": 363,
@@ -11,6 +11,9 @@
   "shieldCenter": [0, 0],
   "shieldRadius": 213.5,
   "viewOffset": 0,
+  "builtInMods": [
+    "hbi"
+  ],
   "builtInWeapons": {
     "WS0009": "fs_ChuiXin_chain",
     "WS0010": "fs_ChuiXin_chain",
@@ -129,7 +132,7 @@
     {
       "id": "WS0013",
       "size": "LARGE",
-      "type": "BALLISTIC",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 0,
       "angle": -0,
@@ -138,11 +141,29 @@
     {
       "id": "WS0014",
       "size": "LARGE",
-      "type": "BALLISTIC",
+      "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 0,
       "angle": 0,
       "locations": [166.5, -46.5]
+    },
+    {
+      "id": "WS0015",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [160.5, 24]
+    },
+    {
+      "id": "WS0016",
+      "size": "SMALL",
+      "type": "MISSILE",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [160.5, -24]
     }
   ],
   "engineSlots": [
@@ -223,6 +244,22 @@
       "length": 60,
       "width": 22,
       "angle": 180,
+      "contrailSize": 22,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-156.5, 24.5],
+      "length": 60,
+      "width": 22,
+      "angle": 180,
+      "contrailSize": 22,
+      "style": "LOW_TECH"
+    },
+    {
+      "location": [-156.5, -24.5],
+      "length": 60,
+      "width": 22,
+      "angle": -180,
       "contrailSize": 22,
       "style": "LOW_TECH"
     }

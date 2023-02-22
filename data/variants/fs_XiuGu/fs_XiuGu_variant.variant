@@ -3,12 +3,25 @@
   "hullId": "fs_XiuGu",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 10,
+  "fluxVents": 4,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
-  "weaponGroups": [],
+  "hullMods": [
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS000": "sabot",
+        "WS0001": "sabot",
+        "WS0002": "chaingun",
+        "WS0003": "chaingun"
+      }
+    }
+  ],
   "modules": [],
   "wings": []
 }

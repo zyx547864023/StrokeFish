@@ -3,12 +3,65 @@
   "hullId": "fs_GeMing",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 50,
+  "fluxVents": 50,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
-  "weaponGroups": [],
+  "hullMods": [
+    "fluxdistributor",
+    "fluxcoil",
+    "heavyarmor"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lightneedler",
+        "WS0008": "lightneedler",
+        "WS0017": "devastator",
+        "WS0018": "devastator"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0032": "fs_GeMing_4_missile",
+        "WS0033": "fs_GeMing_4_missile",
+        "WS0034": "fs_GeMing_3_missile",
+        "WS0035": "fs_GeMing_3_missile",
+        "WS0036": "fs_GeMing_shoulder_missile",
+        "WS0037": "fs_GeMing_shoulder_missile",
+        "WS0038": "fs_GeMing_5_missile",
+        "WS0039": "fs_GeMing_5_missile",
+        "WS0040": "fs_GeMing_dick_missile"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0013": "heavyneedler",
+        "WS0014": "heavyneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "vulcan",
+        "WS0002": "vulcan",
+        "WS1009": "devastator",
+        "WS1010": "devastator"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    }
+  ],
   "modules": [],
   "wings": []
 }

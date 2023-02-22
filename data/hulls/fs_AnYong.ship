@@ -58,7 +58,7 @@
       "id": "WS0005",
       "size": "SMALL",
       "type": "MISSILE",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 0,
       "angle": 0,
       "locations": [22, -0]
@@ -67,7 +67,7 @@
       "id": "WS0006",
       "size": "SMALL",
       "type": "MISSILE",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 0,
       "angle": -180,
       "locations": [-40.5, 35]
@@ -76,10 +76,19 @@
       "id": "WS0007",
       "size": "SMALL",
       "type": "MISSILE",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 0,
       "angle": 180,
       "locations": [-40.5, -35]
+    },
+    {
+      "id": "WS0008",
+      "size": "SMALL",
+      "type": "ENERGY",
+      "mount": "HARDPOINT",
+      "arc": 120,
+      "angle": 0,
+      "locations": [11.5, -0]
     }
   ],
   "engineSlots": [

@@ -63,7 +63,7 @@
     },
     {
       "id": "WS0006",
-      "size": "SMALL",
+      "size": "MEDIUM",
       "type": "COMPOSITE",
       "mount": "TURRET",
       "arc": 120,

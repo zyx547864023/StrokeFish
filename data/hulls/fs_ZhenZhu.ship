@@ -11,6 +11,9 @@
   "shieldCenter": [0, -0],
   "shieldRadius": 227.5,
   "viewOffset": 0,
+  "builtInMods": [
+    "advancedcore"
+  ],
   "weaponSlots": [
     {
       "id": "WS0001",
@@ -69,7 +72,7 @@
     {
       "id": "WS0007",
       "size": "LARGE",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 120,
       "angle": 0,
@@ -78,7 +81,7 @@
     {
       "id": "WS0008",
       "size": "LARGE",
-      "type": "ENERGY",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 120,
       "angle": -0,
@@ -149,7 +152,7 @@
     },
     {
       "id": "WS0016",
-      "size": "LARGE",
+      "size": "SMALL",
       "type": "ENERGY",
       "mount": "TURRET",
       "arc": 120,

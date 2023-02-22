@@ -3,21 +3,72 @@
   "hullId": "fs_ChuiXinZhe",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 50,
+  "fluxVents": 12,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "hardenedshieldemitter",
+    "stabilizedshieldemitter",
+    "dedicated_targeting_core"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
+        "WS0003": "sabotpod",
+        "WS0004": "sabotpod",
         "WS0009": "fs_ChuiXin_chain",
         "WS0010": "fs_ChuiXin_chain",
-        "WS0011": "fs_ChuiXin_cannon",
-        "WS0012": "fs_ChuiXin_cannon"
+        "WS0011": "fs_ChuiXin_chain",
+        "WS0012": "fs_ChuiXin_chain",
+        "WS0013": "devastator",
+        "WS0014": "devastator"
       }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0007": "lightneedler",
+        "WS0008": "lightneedler"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0015": "sabot",
+        "WS0016": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "dualflak",
+        "WS0006": "dualflak"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "devastator",
+        "WS0002": "devastator"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {}
     }
   ],
   "modules": [],

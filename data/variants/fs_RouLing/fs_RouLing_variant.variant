@@ -3,12 +3,26 @@
   "hullId": "fs_RouLing",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 10,
+  "fluxVents": 4,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
-  "weaponGroups": [],
+  "hullMods": [
+    "safetyoverrides",
+    "missleracks"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "reaper",
+        "WS0002": "reaper",
+        "WS0003": "lightneedler",
+        "WS0004": "lightneedler"
+      }
+    }
+  ],
   "modules": [],
   "wings": []
 }

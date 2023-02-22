@@ -1,0 +1,18 @@
+{
+	"id":"fs_HeiYing_heavyblaster_shot",
+	"specClass":"projectile",
+	"spawnType":"BALLISTIC_AS_BEAM",
+	"collisionClass":"RAY",
+	"collisionClassByFighter":"RAY_FIGHTER",
+	"length":45.0,
+	"width":7,
+	"fadeTime":0.3,
+	"fringeColor":[134,76,205,255],
+	"coreColor":[255,255,255,255],
+	"glowColor":[134,76,205,75],
+	"glowRadius":35,
+	"hitGlowRadius":75,	
+	"textureScrollSpeed":64.0,
+	"pixelsPerTexel":5.0,
+	"bulletSprite":"graphics/missiles/shell_gauss_cannon.png"	
+}

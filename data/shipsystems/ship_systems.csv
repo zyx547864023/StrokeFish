@@ -5,7 +5,6 @@ name,id,flux/second,f/s (base rate),f/s (base cap),flux/use,f/u (base rate),f/u 
 棱镜光束,fs_beamsystem,,,,,,,,,,0.5,1,0.5,5,,,,,,,,,,,,,
 立体式增炉,fs_delaiweaponsystem,,,,,,,,,,1,8,1,15,,,,,,,,,,,,,
 献给独裁者的礼物,fs_armorremoved,,,,,,,,,,1,1,1,10,TRUE,,,,,TRUE,TRUE,TRUE,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,,,,,,,,,,,,
+魅影力场,fs_MeiYingField,,,,,,,,,,,5,,5,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,

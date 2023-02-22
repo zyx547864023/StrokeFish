@@ -3,12 +3,23 @@
   "hullId": "fs_XiuShi",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 20,
+  "fluxVents": 12,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
-  "weaponGroups": [],
+  "hullMods": [
+    "safetyoverrides"
+  ],
+  "weaponGroups": [
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0001": "mjolnir",
+        "WS0002": "mjolnir"
+      }
+    }
+  ],
   "modules": [],
   "wings": []
 }

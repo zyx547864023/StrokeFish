@@ -3,20 +3,53 @@
   "hullId": "fs_AnYong",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 10,
+  "fluxVents": 6,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "fluxcoil",
+    "fluxdistributor",
+    "stabilizedshieldemitter"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
         "WS0001": "cryoflux",
-        "WS0002": "cryoflux",
+        "WS0002": "cryoflux"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
         "WS0003": "cryoblaster",
         "WS0004": "cryoblaster"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0005": "sabot"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0006": "heatseeker",
+        "WS0007": "heatseeker"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
+        "WS0008": "taclaser"
       }
     }
   ],

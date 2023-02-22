@@ -11,17 +11,15 @@
   "shieldCenter": [0, -0],
   "shieldRadius": 161.5,
   "viewOffset": 0,
-  "builtInWeapons": {
-  },
   "builtInMods": [
-     "fs_delaiweaponchange"
+    "fs_delaiweaponchange"
   ],
   "weaponSlots": [
     {
       "id": "WS0001",
       "size": "SMALL",
       "type": "MISSILE",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 0,
       "angle": 0,
       "locations": [-11.5, 63]
@@ -30,7 +28,7 @@
       "id": "WS0002",
       "size": "SMALL",
       "type": "MISSILE",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 0,
       "angle": -0,
       "locations": [-11.5, -63]
@@ -74,7 +72,7 @@
     {
       "id": "WS0009",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 150,
       "angle": -72.5,
@@ -83,7 +81,7 @@
     {
       "id": "WS0010",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 150,
       "angle": 72.5,
@@ -92,7 +90,7 @@
     {
       "id": "WS0011",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 150,
       "angle": -90,
@@ -101,7 +99,7 @@
     {
       "id": "WS0012",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 150,
       "angle": 90,
@@ -110,7 +108,7 @@
     {
       "id": "WS0014",
       "size": "SMALL",
-      "type": "BALLISTIC",
+      "type": "HYBRID",
       "mount": "TURRET",
       "arc": 150,
       "angle": -180,
@@ -129,7 +127,7 @@
       "id": "WS0013",
       "size": "SMALL",
       "type": "MISSILE",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 0,
       "angle": 0,
       "locations": [6.5, 51]
@@ -138,7 +136,7 @@
       "id": "WS0015",
       "size": "SMALL",
       "type": "MISSILE",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 0,
       "angle": 0,
       "locations": [6.5, -51]

@@ -12,10 +12,8 @@
   "shieldRadius": 158.5,
   "viewOffset": 0,
   "builtInWeapons": {
-    "WS0012": "ionpulser",
-    "WS0013": "ionpulser",
-    "WS0014": "ionpulser",
-    "WS0015": "ionpulser"
+    "WS0012": "fs_tpc",
+    "WS0013": "fs_tpc"
   },
   "weaponSlots": [
     {
@@ -119,39 +117,21 @@
     },
     {
       "id": "WS0012",
-      "size": "MEDIUM",
+      "size": "LARGE",
       "type": "BUILT_IN",
       "mount": "HIDDEN",
-      "arc": 0,
-      "angle": 0,
-      "locations": [109.5, 23]
+      "arc": 5,
+      "angle": -0,
+      "locations": [115, 27.5]
     },
     {
       "id": "WS0013",
-      "size": "MEDIUM",
+      "size": "LARGE",
       "type": "BUILT_IN",
       "mount": "HIDDEN",
-      "arc": 0,
-      "angle": -0,
-      "locations": [109.5, -23]
-    },
-    {
-      "id": "WS0014",
-      "size": "MEDIUM",
-      "type": "BUILT_IN",
-      "mount": "HIDDEN",
-      "arc": 0,
-      "angle": -0,
-      "locations": [112, -31.5]
-    },
-    {
-      "id": "WS0015",
-      "size": "MEDIUM",
-      "type": "BUILT_IN",
-      "mount": "HIDDEN",
-      "arc": 0,
+      "arc": 5,
       "angle": 0,
-      "locations": [112, 31.5]
+      "locations": [115, -27.5]
     }
   ],
   "engineSlots": [

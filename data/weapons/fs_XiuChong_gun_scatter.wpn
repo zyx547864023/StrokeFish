@@ -34,7 +34,7 @@
   "animationType": "MUZZLE_FLASH",
   "muzzleFlashSpec": {
     "length": 54,
-    "spread": 20,
+    "spread": 50,
     "particleSizeMin": 18,
     "particleSizeRange": 24,
     "particleDuration": 0.12,

@@ -3,20 +3,32 @@
   "hullId": "fs_HeiLang",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 10,
+  "fluxVents": 8,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "safetyoverrides",
+    "fluxcoil",
+    "fluxdistributor",
+    "unstable_injector",
+    "extendedshieldemitter"
+  ],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
+        "WS0003": "ionpulser",
+        "WS0004": "ionpulser"
+      }
+    },
+    {
+      "autofire": false,
+      "mode": "LINKED",
+      "weapons": {
         "WS0001": "irpulse",
-        "WS0002": "irpulse",
-        "WS0003": "cryoblaster",
-        "WS0004": "cryoblaster"
+        "WS0002": "irpulse"
       }
     }
   ],

@@ -15,10 +15,10 @@
     "fs_HeiZhua_wing"
   ],
   "builtInWeapons": {
-    "WS0001": "minelayer2",
-    "WS0002": "minelayer2",
-    "WS0003": "minelayer2",
-    "WS0004": "minelayer2"
+    "WS0001": "fs_HeiYing_tpc",
+    "WS0002": "fs_HeiYing_tpc",
+    "WS0003": "fs_HeiYing_heavyblaster",
+    "WS0004": "fs_HeiYing_heavyblaster"
   },
   "weaponSlots": [
     {
@@ -26,7 +26,7 @@
       "size": "MEDIUM",
       "type": "BUILT_IN",
       "mount": "HIDDEN",
-      "arc": 0,
+      "arc": 5,
       "angle": 0,
       "locations": [-2, 32.5]
     },
@@ -35,7 +35,7 @@
       "size": "MEDIUM",
       "type": "BUILT_IN",
       "mount": "HIDDEN",
-      "arc": 0,
+      "arc": 5,
       "angle": -0,
       "locations": [-2, -32.5]
     },
@@ -44,7 +44,7 @@
       "size": "MEDIUM",
       "type": "BUILT_IN",
       "mount": "HIDDEN",
-      "arc": 0,
+      "arc": 5,
       "angle": 0,
       "locations": [8.5, 23]
     },
@@ -53,7 +53,7 @@
       "size": "MEDIUM",
       "type": "BUILT_IN",
       "mount": "HIDDEN",
-      "arc": 0,
+      "arc": 5,
       "angle": -0,
       "locations": [8.5, -23]
     }

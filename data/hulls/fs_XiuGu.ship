@@ -20,7 +20,7 @@
       "id": "WS0001",
       "size": "SMALL",
       "type": "MISSILE",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 0,
       "angle": 0,
       "locations": [15, -52]
@@ -29,7 +29,7 @@
       "id": "WS000",
       "size": "SMALL",
       "type": "MISSILE",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 0,
       "angle": -0,
       "locations": [15, 52]
@@ -38,7 +38,7 @@
       "id": "WS0002",
       "size": "MEDIUM",
       "type": "COMPOSITE",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 0,
       "angle": -0,
       "locations": [25, 15]
@@ -47,7 +47,7 @@
       "id": "WS0003",
       "size": "MEDIUM",
       "type": "COMPOSITE",
-      "mount": "TURRET",
+      "mount": "HARDPOINT",
       "arc": 0,
       "angle": 0,
       "locations": [25, -15]

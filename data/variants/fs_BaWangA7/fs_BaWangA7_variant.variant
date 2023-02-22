@@ -3,12 +3,26 @@
   "hullId": "fs_BaWangA7",
   "displayName": "New Variant",
   "goalVariant": false,
-  "fluxCapacitors": 0,
-  "fluxVents": 0,
+  "fluxCapacitors": 50,
+  "fluxVents": 47,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": [
+    "heavyarmor",
+    "hardenedshieldemitter",
+    "expanded_deck_crew",
+    "fluxcoil"
+  ],
   "weaponGroups": [],
   "modules": [],
-  "wings": []
+  "wings": [
+    "trident_wing",
+    "trident_wing",
+    "trident_wing",
+    "trident_wing",
+    "longbow_wing",
+    "longbow_wing",
+    "longbow_wing",
+    "longbow_wing"
+  ]
 }

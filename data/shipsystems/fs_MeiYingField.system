@@ -1,0 +1,14 @@
+{
+	"id":"fs_MeiYingField",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	"aiScript":"data.shipsystems.scripts.ai.fs_MeiYingFieldAi",
+	"statsScript":"data.shipsystems.scripts.fs_MeiYingField",
+	
+	
+	
+	
+	"aiHints":{
+	
+	}
+}

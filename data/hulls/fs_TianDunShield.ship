@@ -1,0 +1,22 @@
+{
+  "hullName": "盾",
+  "hullId": "fs_TianDunShield",
+  "hullSize": "CRUISER",
+  "spriteName": "graphics/ships/fs_TianDun/fs_TianDun_ring.png",
+  "style": "MIDLINE",
+  "height": 897,
+  "width": 897,
+  "center": [448.5, 448.5],
+  "collisionRadius": 1001,
+  "shieldCenter": [0, 0],
+  "shieldRadius": 1000,
+  "viewOffset": 0,
+  "weaponSlots": [],
+  "engineSlots": [],
+  "bounds": [
+    1.5, -1.5,
+    -1.5, -1.5,
+    -1.5, 1.5,
+    1.5, 1.5
+  ]
+}

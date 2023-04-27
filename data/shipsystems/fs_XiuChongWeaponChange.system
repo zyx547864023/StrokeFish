@@ -1,0 +1,11 @@
+{
+	"id":"fs_XiuChongWeaponChange",
+	"type":"STAT_MOD",
+	"aiType":"CUSTOM",
+	
+	"aiScript":"data.shipsystems.scripts.ai.fs_MeiYingFieldAi",
+	"statsScript":"data.shipsystems.scripts.fs_XiuChongWeaponChange",
+	
+	"useSound":"system_ammo_feeder",
+	"outOfUsesSound":"gun_out_of_ammo",
+}

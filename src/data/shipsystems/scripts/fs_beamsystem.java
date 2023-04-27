@@ -17,8 +17,7 @@ import java.awt.*;
 import java.util.List;
 import java.util.*;
 
-import static data.scripts.util.MagicFakeBeam.getCollisionPointOnCircumference;
-import static data.scripts.util.MagicFakeBeam.getShipCollisionPoint;
+import static data.scripts.util.MagicFakeBeam.*;
 
 public class fs_beamsystem extends BaseShipSystemScript {
     List<ShipAPI> targets1 = null;
@@ -65,6 +64,7 @@ public class fs_beamsystem extends BaseShipSystemScript {
         KEY = "FS_bspluginkey" + ship.getFleetMemberId();
         targets1 = null;
         init = false;
+
     }
 
     private static class DataContainer {
@@ -77,7 +77,7 @@ public class fs_beamsystem extends BaseShipSystemScript {
         private final String KEY;
         boolean init1 = false;
         Color paramColor = new Color(12, 122, 190, 255);
-        Color beamColor = new Color(0, 255, 255, 255);
+        Color beamColor = new Color(136, 136, 136, 255);
         List<ShipAPI> targets;
         float totalamount = 0f;
         float arg2;
@@ -391,7 +391,7 @@ public class fs_beamsystem extends BaseShipSystemScript {
 
             float base = 0f;
             float maxTex = lineTex.getTextureHeight();
-            float maxWidth=lineTex.getWidth();
+            float maxWidth = lineTex.getWidth();
             GL11.glBegin(GL11.GL_QUAD_STRIP);
 
             double x = anchor.getX() + 0.5f * width * Math.cos(Math.toRadians(arg + 90f));
@@ -413,7 +413,7 @@ public class fs_beamsystem extends BaseShipSystemScript {
 
                 x = nextX;
                 y = nextY;
-                leftEdgeOfShowingTex += distance/maxWidth;
+                leftEdgeOfShowingTex += distance / maxWidth;
             }
 
             GL11.glEnd();

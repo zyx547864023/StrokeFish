@@ -2,7 +2,8 @@ package data.hullmods;
 
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.ShipAPI;
-public class fs_delaiweapon3 extends BaseHullMod
+
+public class fs_TianDunXianQuan extends BaseHullMod
 {
     public int getDisplaySortOrder()
     {
@@ -14,7 +15,7 @@ public class fs_delaiweapon3 extends BaseHullMod
         return 3;
     }
     public String getDescriptionParam(int index, ShipAPI.HullSize hullSize) {
-        if (index == 0) return "德莱三联炮";
+        if (index == 0) return "天盾线圈炮";
         return null;
     }
 }

@@ -1,10 +1,34 @@
 <component name="libraryTable">
   <library name="jars">
     <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/commons-compiler-jdk.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/commons-compiler.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/fs.common_obf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/fs.sound_obf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/janino.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/jinput.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/jogg-0.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/jorbis-0.0.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/json.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/log4j-1.2.9.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/lwjgl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/lwjgl_util.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/starfarer.api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/starfarer_obf.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/xstream-1.4.10.jar!/" />
+      <root url="file://$PROJECT_DIR$/../LazyLib/jars" />
+      <root url="file://$PROJECT_DIR$/../MagicLib/jars" />
+      <root url="file://$PROJECT_DIR$/../GraphicsLib/jars" />
       <root url="jar://$PROJECT_DIR$/jars/fs_core.jar!/" />
-      <root url="jar://$PROJECT_DIR$/jars/StrokeFish.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../starsector-core/starfarer.api.zip!/" />
+      <root url="file://$PROJECT_DIR$/../LazyLib/jars" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../GraphicsLib/jars" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../LazyLib/jars" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../MagicLib/jars" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../LazyLib/jars" recursive="false" type="SOURCES" />
   </library>
 </component>

@@ -246,22 +246,6 @@
       "angle": 180,
       "contrailSize": 22,
       "style": "LOW_TECH"
-    },
-    {
-      "location": [-156.5, 24.5],
-      "length": 60,
-      "width": 22,
-      "angle": 180,
-      "contrailSize": 22,
-      "style": "LOW_TECH"
-    },
-    {
-      "location": [-156.5, -24.5],
-      "length": 60,
-      "width": 22,
-      "angle": -180,
-      "contrailSize": 22,
-      "style": "LOW_TECH"
     }
   ],
   "bounds": [

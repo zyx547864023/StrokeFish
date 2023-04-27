@@ -14,7 +14,11 @@
 			"fs_bs_beam2":"graphics/fx/emp_arcs.png",
 			"fs_nocover":"graphics/fx/fs_nocover.png",
 			"fs_trail_highlight":"graphics/fx/fs_trail_highlight.png",
-			"fs_beamcore":"graphics/fx/beamcorec.png"
+			"fs_beamcore":"graphics/fx/beamcorec.png",
+			"fs_meiyingring":"graphics/fx/fs_meiyingring.png",
+		},
+		"fs_TianDun":{
+		    "fs_TianDun_Shield":"graphics/ships/fs_TianDun/fs_TianDun_Shield.png",
 		},
     }
 }

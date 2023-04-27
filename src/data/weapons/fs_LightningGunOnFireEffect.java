@@ -1,25 +1,12 @@
 package data.weapons;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.combat.CollisionClass;
-import com.fs.starfarer.api.combat.CombatEngineAPI;
-import com.fs.starfarer.api.combat.CombatEntityAPI;
-import com.fs.starfarer.api.combat.DamageType;
-import com.fs.starfarer.api.combat.DamagingProjectileAPI;
-import com.fs.starfarer.api.combat.EmpArcEntityAPI;
-import com.fs.starfarer.api.combat.OnFireEffectPlugin;
-import com.fs.starfarer.api.combat.ShipAPI;
-import com.fs.starfarer.api.combat.WeaponAPI;
+import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.combat.listeners.ApplyDamageResultAPI;
 import com.fs.starfarer.api.combat.listeners.DamageListener;
 import com.fs.starfarer.api.util.Misc;
-import java.awt.Color;
-import java.util.Collections;
-import java.util.EnumSet;
-import java.util.Iterator;
-import java.util.List;
-import data.util.fs_Util;
 import data.util.fs_Multi;
+import data.util.fs_Util;
 import org.dark.shaders.light.LightShader;
 import org.dark.shaders.light.StandardLight;
 import org.lazywizard.lazylib.CollectionUtils;
@@ -28,6 +15,12 @@ import org.lazywizard.lazylib.MathUtils;
 import org.lazywizard.lazylib.VectorUtils;
 import org.lazywizard.lazylib.combat.CombatUtils;
 import org.lwjgl.util.vector.Vector2f;
+
+import java.awt.*;
+import java.util.Collections;
+import java.util.EnumSet;
+import java.util.Iterator;
+import java.util.List;
 
 public class fs_LightningGunOnFireEffect implements OnFireEffectPlugin {
 
@@ -161,7 +154,7 @@ public class fs_LightningGunOnFireEffect implements OnFireEffectPlugin {
         if (distance > projectile.getWeapon().getRange()) {
             atten = 1f - ((distance - projectile.getWeapon().getRange()) / (SLOP_RANGE * 2f));
         }
-        float thickness = 40f * atten;
+        float thickness = 10f * atten;
         float coreWidth = thickness * 0.65f;
         int brightness = (int) (255f * atten);
 
@@ -176,6 +169,16 @@ public class fs_LightningGunOnFireEffect implements OnFireEffectPlugin {
                 new Color(211, 27, 217, fs_Util.clamp255(brightness)), new Color(240, 250, 255, fs_Util.clamp255(brightness)));
         arc.setCoreWidthOverride(coreWidth);
         arc.setSingleFlickerMode();
+
+        EmpArcEntityAPI arc2 = engine.spawnEmpArcVisual(projectile.getSpawnLocation(), projectile.getSource(), visualPoint, target, thickness,
+                new Color(211, 27, 217, fs_Util.clamp255(brightness)), new Color(240, 250, 255, fs_Util.clamp255(brightness)));
+        arc2.setCoreWidthOverride(coreWidth);
+        arc2.setSingleFlickerMode();
+
+        EmpArcEntityAPI arc3 = engine.spawnEmpArcVisual(projectile.getSpawnLocation(), projectile.getSource(), visualPoint, target, thickness,
+                new Color(211, 27, 217, fs_Util.clamp255(brightness)), new Color(240, 250, 255, fs_Util.clamp255(brightness)));
+        arc3.setCoreWidthOverride(coreWidth);
+        arc3.setSingleFlickerMode();
 
         if (target != null) {
             float emp = projectile.getEmpAmount() * atten;

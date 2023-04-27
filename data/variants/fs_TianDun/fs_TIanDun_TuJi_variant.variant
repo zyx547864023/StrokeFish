@@ -7,14 +7,13 @@
   "fluxVents": 0,
   "quality": 1,
   "permaMods": [],
-  "hullMods": [],
+  "hullMods": ["fs_TianDunTuJi"],
   "weaponGroups": [
     {
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0014": "fs_TianDunXianQuan_left",
-        "WS0015": "fs_TianDunXianQuan_right"
+
       }
     },
     {
@@ -47,8 +46,8 @@
       "autofire": false,
       "mode": "LINKED",
       "weapons": {
-        "WS0003": "heatseeker",
-        "WS0004": "heatseeker"
+        "WS0103": "heatseeker",
+        "WS0104": "heatseeker"
       }
     }
   ],

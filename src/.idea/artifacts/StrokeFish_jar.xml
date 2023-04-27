@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="StrokeFish:jar">
-    <output-path>$PROJECT_DIR$/../jars</output-path>
-    <root id="archive" name="StrokeFish.jar">
-      <element id="module-output" name="StrokeFish" />
-    </root>
-  </artifact>
-</component>

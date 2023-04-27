@@ -13,7 +13,7 @@ import java.util.Objects;
 
 public class fs_delaiweaponsystem extends BaseShipSystemScript {
     private final Map<Integer, String> FS_DELAIWEAPONSYSTEM;
-    private boolean init=false;
+    private boolean init = false;
     private float damage;
 
     public fs_delaiweaponsystem() {
@@ -24,25 +24,25 @@ public class fs_delaiweaponsystem extends BaseShipSystemScript {
         this.FS_DELAIWEAPONSYSTEM.put(2, "fs_DeLaiManNi_trebie");
     }
 
-        @Override
+    @Override
     public void apply(MutableShipStatsAPI stats, String id, State state, float effectLevel) {
         ShipAPI ship = (ShipAPI) stats.getEntity();
         if (ship == null) {
             return;
         }
-        for(WeaponAPI weapon:ship.getAllWeapons()){
-           for (int i=0;i<3;i++){
-               if(Objects.equals(weapon.getSpec().getWeaponId(), this.FS_DELAIWEAPONSYSTEM.get(i))){
-                       weapon.getDamage().setDamage(damage * 1.5f);
-                   ship.setWeaponGlow(effectLevel,new Color(84, 129, 24,255), EnumSet.of(WeaponAPI.WeaponType.BALLISTIC));
-               }
-           }
+        for (WeaponAPI weapon : ship.getAllWeapons()) {
+            for (int i = 0; i < 3; i++) {
+                if (Objects.equals(weapon.getSpec().getWeaponId(), this.FS_DELAIWEAPONSYSTEM.get(i))) {
+                    weapon.getDamage().setDamage(damage * 1.5f);
+                    ship.setWeaponGlow(effectLevel, new Color(84, 129, 24, 255), EnumSet.of(WeaponAPI.WeaponType.BALLISTIC));
+                }
+            }
         }
-        stats.getTurnAcceleration().modifyMult(id,1.5f);
-        stats.getMaxTurnRate().modifyMult(id,1.5f);
-        stats.getMaxSpeed().modifyMult(id,1.25f);
-        stats.getAcceleration().modifyMult(id,1.25f);
-        stats.getFluxDissipation().modifyMult(id,1.25f);
+        stats.getTurnAcceleration().modifyMult(id, 1.5f);
+        stats.getMaxTurnRate().modifyMult(id, 1.5f);
+        stats.getMaxSpeed().modifyMult(id, 1.25f);
+        stats.getAcceleration().modifyMult(id, 1.25f);
+        stats.getFluxDissipation().modifyMult(id, 1.25f);
     }
 
     @Override
@@ -51,11 +51,11 @@ public class fs_delaiweaponsystem extends BaseShipSystemScript {
         if (ship == null) {
             return;
         }
-        for(WeaponAPI weapon:ship.getAllWeapons()){
-            for (int i=0;i<3;i++){
-                if(Objects.equals(weapon.getSpec().getWeaponId(), this.FS_DELAIWEAPONSYSTEM.get(i))){
-                    if(!init) {
-                        init=true;
+        for (WeaponAPI weapon : ship.getAllWeapons()) {
+            for (int i = 0; i < 3; i++) {
+                if (Objects.equals(weapon.getSpec().getWeaponId(), this.FS_DELAIWEAPONSYSTEM.get(i))) {
+                    if (!init) {
+                        init = true;
                         damage = weapon.getDamage().getBaseDamage();
                     }
                     weapon.getDamage().setDamage(damage);

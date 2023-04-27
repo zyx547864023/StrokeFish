@@ -267,7 +267,7 @@ public class fs_MeiYingField extends BaseShipSystemScript {
             GL11.glLineWidth(thickness);
             GL11.glColor4ub((byte) color.getRed(), (byte) color.getGreen(), (byte) color.getBlue(), (byte)Math.max(0, Math.min(Math.round(alpha * 255f), 255)) );
             GL11.glBegin(GL11.GL_LINE_STRIP);
-            for(int i = 0; i < Math.round(angle); i++){
+            for(double i = 0; i < Math.round(angle); i=i+0.1){
                 GL11.glVertex2f(
                         loc.x + (radius * (float)Math.cos(Math.toRadians(aimAngleTop + i)) + x * (float)Math.cos(Math.toRadians(aimAngle - 90f)) - y * (float)Math.sin(Math.toRadians(aimAngle - 90f))),
                         loc.y + (radius * (float)Math.sin(Math.toRadians(aimAngleTop + i)) + x * (float)Math.sin(Math.toRadians(aimAngle - 90f)) + y * (float)Math.cos(Math.toRadians(aimAngle - 90f)))

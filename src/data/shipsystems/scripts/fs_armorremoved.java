@@ -1,14 +1,13 @@
 package data.shipsystems.scripts;
 
 import com.fs.starfarer.api.Global;
-import com.fs.starfarer.api.combat.MutableShipStatsAPI;
-import com.fs.starfarer.api.combat.ShipAPI;
-import com.fs.starfarer.api.combat.WeaponAPI;
+import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import org.lazywizard.lazylib.MathUtils;
 import org.lwjgl.util.vector.Vector2f;
 
 import java.awt.*;
+import java.util.EnumSet;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -19,19 +18,20 @@ public class fs_armorremoved extends BaseShipSystemScript {
     private final Map<Integer, String> FS_ARMORREMOVELEFT;
     private final Map<Integer, String> FS_ARMORREMOVERIGHT;
     private final Map<Integer, String> FS_MISSILEWEAPON;
+    private final Map<Integer, String> FS_ARMORREMOVEFRONT;
+    private final Vector2f[] FS_LEFTCENT = new Vector2f[7];
+    private final Vector2f[] FS_FRONTCENT = new Vector2f[7];
+    private final Vector2f[] FS_RIGHTCENT = new Vector2f[7];
     private int step = 0;
     private float timer = 0f;
     private boolean init1 = false;
     private boolean init2 = false;
     private boolean init3 = false;
     private Vector2f[] FS_LEFTORGLOC = new Vector2f[7];
-
+    private final Vector2f[] FS_FRONTORGLOC = new Vector2f[7];
     private Vector2f[] FS_RIGHTORGLOC = new Vector2f[7];
-
-    private final Vector2f[] FS_LEFTCENT = new Vector2f[7];
-
-    private final Vector2f[] FS_RIGHTCENT = new Vector2f[7];
     private Vector2f[] FS_ORGLEFTCENT = new Vector2f[7];
+    private final Vector2f[] FS_ORGFRONTCENT = new Vector2f[7];
     private Vector2f[] FS_ORGRIGHTCENT = new Vector2f[7];
     private float arg = 0f;
 
@@ -51,6 +51,10 @@ public class fs_armorremoved extends BaseShipSystemScript {
         this.FS_ARMORREMOVELEFT.put(4, "fs_GeMing_left_waist_cover");
         this.FS_ARMORREMOVELEFT.put(5, "fs_GeMing_left_leg_cover");
         this.FS_ARMORREMOVELEFT.put(6, "fs_GeMing_left_egg_cover");
+        this.FS_ARMORREMOVEFRONT = new HashMap<>();
+        this.FS_ARMORREMOVEFRONT.put(0, "fs_GeMing_dick_cover");
+        this.FS_ARMORREMOVEFRONT.put(1, "fs_GeMing_bottom_cover");
+        this.FS_ARMORREMOVEFRONT.put(2, "fs_GeMing_top_cover");
         this.FS_ARMORREMOVERIGHT = new HashMap<>();
         this.FS_ARMORREMOVERIGHT.put(0, "fs_GeMing_right_shoulder_cover");
         this.FS_ARMORREMOVERIGHT.put(1, "fs_GeMing_right_arm_cover");
@@ -75,7 +79,31 @@ public class fs_armorremoved extends BaseShipSystemScript {
                 for (WeaponAPI a : ship.getAllWeapons()) {
                     for (int i = 0; i < this.FS_MISSILEWEAPON.size(); i++) {
                         if (Objects.equals(a.getSpec().getWeaponId(), this.FS_MISSILEWEAPON.get(i))) {
-                            Global.getCombatEngine().spawnProjectile(ship, a, a.getId(), a.getFirePoint(0), a.getCurrAngle(), ship.getVelocity());
+                            if (i == 0) {
+                                for (int w = 1; w <= 3; w++) {
+                                    Global.getCombatEngine().spawnProjectile(ship, a, a.getId(), a.getFirePoint(0), a.getCurrAngle(), ship.getVelocity());
+                                }
+                            }
+                            if (i == 1) {
+                                for (int w = 1; w <= 3; w++) {
+                                    Global.getCombatEngine().spawnProjectile(ship, a, a.getId(), a.getFirePoint(0), a.getCurrAngle(), ship.getVelocity());
+                                }
+                            }
+                            if (i == 2) {
+                                for (int w = 1; w <= 3; w++) {
+                                    Global.getCombatEngine().spawnProjectile(ship, a, a.getId(), a.getFirePoint(0), a.getCurrAngle(), ship.getVelocity());
+                                }
+                            }
+                            if (i == 3) {
+                                for (int w = 1; w <= 2; w++) {
+                                    Global.getCombatEngine().spawnProjectile(ship, a, a.getId(), a.getFirePoint(0), a.getCurrAngle(), ship.getVelocity());
+                                }
+                            }
+                            if (i == 4) {
+                                for (int w = 1; w <= 8; w++) {
+                                    Global.getCombatEngine().spawnProjectile(ship, a, a.getId(), a.getFirePoint(0), a.getCurrAngle(), ship.getVelocity());
+                                }
+                            }
                         }
                     }
                 }
@@ -86,7 +114,7 @@ public class fs_armorremoved extends BaseShipSystemScript {
 
                 if (!init1) {
                     init1 = true;
-
+                    Global.getCombatEngine().addLayeredRenderingPlugin(new Fs_ArmorcontrolPlugin(ship));
                     arg = ship.getFacing();
                     for (WeaponAPI a : ship.getAllWeapons()) {
                         for (int i = 0; i < this.FS_ARMORREMOVELEFT.size(); i++) {
@@ -95,6 +123,14 @@ public class fs_armorremoved extends BaseShipSystemScript {
                                 FS_LEFTORGLOC[i] = orgleftloc;
                                 Vector2f centleftloc = new Vector2f(a.getSprite().getCenterX(), a.getSprite().getCenterY());
                                 FS_LEFTCENT[i] = centleftloc;
+                            }
+                        }
+                        for (int i = 0; i < this.FS_ARMORREMOVEFRONT.size(); i++) {
+                            if (Objects.equals(a.getSpec().getWeaponId(), this.FS_ARMORREMOVEFRONT.get(i))) {
+                                Vector2f orgleftloc = new Vector2f(a.getLocation().getX(), a.getLocation().getY());
+                                FS_FRONTORGLOC[i] = orgleftloc;
+                                Vector2f centleftloc = new Vector2f(a.getSprite().getCenterX(), a.getSprite().getCenterY());
+                                FS_FRONTCENT[i] = centleftloc;
                             }
                         }
                         for (int i = 0; i < this.FS_ARMORREMOVERIGHT.size(); i++) {
@@ -120,6 +156,14 @@ public class fs_armorremoved extends BaseShipSystemScript {
 
                             }
                         }
+                        for (int i = 0; i < this.FS_ARMORREMOVEFRONT.size(); i++) {
+                            if (Objects.equals(a.getSpec().getWeaponId(), this.FS_ARMORREMOVEFRONT.get(i))) {
+                                FS_ORGFRONTCENT[i] = new Vector2f(a.getSprite().getCenterX(), a.getSprite().getCenterY());
+                                Global.getCombatEngine().addNegativeNebulaParticle(MathUtils.getRandomPointInCircle(a.getLocation(), 10f), new Vector2f(15f * (float) Math.cos(Math.toRadians(arg + 90f)), 10f * (float) Math.sin(Math.toRadians(arg + 90f))), MathUtils.getRandomNumberInRange(30.0F, 60.0F), 6F, 0.1F, 0.2F, MathUtils.getRandomNumberInRange(1.5F, 2.0F), new Color(116, 255, 100, 100));
+                                Global.getCombatEngine().addNebulaParticle(MathUtils.getRandomPointInCircle(a.getLocation(), 10f), new Vector2f(15f * (float) Math.cos(Math.toRadians(arg + 90f)), 10f * (float) Math.sin(Math.toRadians(arg + 90f))), MathUtils.getRandomNumberInRange(30.0F, 60.0F), 5F, 0.1F, 0.2F, MathUtils.getRandomNumberInRange(1.5F, 2.0F), new Color(255, 255, 255, 100));
+
+                            }
+                        }
                         for (int i = 0; i < this.FS_ARMORREMOVERIGHT.size(); i++) {
                             if (Objects.equals(a.getSpec().getWeaponId(), this.FS_ARMORREMOVERIGHT.get(i))) {
                                 FS_ORGRIGHTCENT[i] = new Vector2f(a.getSprite().getCenterX(), a.getSprite().getCenterY());
@@ -133,6 +177,11 @@ public class fs_armorremoved extends BaseShipSystemScript {
                     for (int i = 0; i < this.FS_ARMORREMOVELEFT.size(); i++) {
                         if (Objects.equals(a.getSpec().getWeaponId(), this.FS_ARMORREMOVELEFT.get(i))) {
                             a.getSprite().setCenter(FS_ORGLEFTCENT[i].getX() + (10f + i * 2f) * timer, FS_ORGLEFTCENT[i].getY());
+                        }
+                    }
+                    for (int i = 0; i < this.FS_ARMORREMOVEFRONT.size(); i++) {
+                        if (Objects.equals(a.getSpec().getWeaponId(), this.FS_ARMORREMOVEFRONT.get(i))) {
+                            a.getSprite().setCenter(FS_ORGFRONTCENT[i].getX(), FS_ORGFRONTCENT[i].getY() + (10f + i * 2f) * timer);
                         }
                     }
                     for (int i = 0; i < this.FS_ARMORREMOVERIGHT.size(); i++) {
@@ -155,8 +204,8 @@ public class fs_armorremoved extends BaseShipSystemScript {
             }
             stats.getMaxSpeed().modifyMult(id2, 1.5f);
             stats.getAcceleration().modifyMult(id2, 1.5f);
-            stats.getMaxTurnRate().modifyMult(id2, 1.7f);
-            stats.getTurnAcceleration().modifyMult(id2, 1.7f);
+            stats.getMaxTurnRate().modifyMult(id2, 2f);
+            stats.getTurnAcceleration().modifyMult(id2, 2f);
             stats.getArmorBonus().modifyMult(id2, 0.8f);
             if (step == 1) {
                 for (WeaponAPI a : ship.getAllWeapons()) {
@@ -165,6 +214,17 @@ public class fs_armorremoved extends BaseShipSystemScript {
                             float range = 50f;
                             Vector2f targetloc = new Vector2f(FS_LEFTORGLOC[i].getX() + (timer - 1f) * (range + i * 10f) * (float) Math.cos(Math.toRadians(arg + 90f)), FS_LEFTORGLOC[i].getY() + (timer - 1f) * (range + i * 10f) * (float) Math.sin(Math.toRadians(arg + 90f)));
                             a.getSprite().setCenter(FS_LEFTCENT[i].getX() - (targetloc.getX() - a.getLocation().getX()), FS_LEFTCENT[i].getY() - (targetloc.getY() - a.getLocation().getY()));
+                            a.setCurrAngle(arg);
+                            if (timer >= 2f && timer <= 3f) {
+                                a.getSprite().setColor(new Color(255, 255, 255, Math.round((3f - timer) * 255)));
+                            }
+                        }
+                    }
+                    for (int i = 0; i < this.FS_ARMORREMOVEFRONT.size(); i++) {
+                        if (Objects.equals(a.getSpec().getWeaponId(), this.FS_ARMORREMOVEFRONT.get(i))) {
+                            float range = 50f;
+                            Vector2f targetloc = new Vector2f(FS_FRONTORGLOC[i].getX() + (timer - 1f) * (range + i * 10f) * (float) Math.cos(Math.toRadians(arg)), FS_FRONTORGLOC[i].getY() + (timer - 1f) * (range + i * 10f) * (float) Math.sin(Math.toRadians(arg)));
+                            a.getSprite().setCenter(FS_FRONTCENT[i].getX() - (targetloc.getX() - a.getLocation().getX()), FS_FRONTCENT[i].getY() - (targetloc.getY() - a.getLocation().getY()));
                             a.setCurrAngle(arg);
                             if (timer >= 2f && timer <= 3f) {
                                 a.getSprite().setColor(new Color(255, 255, 255, Math.round((3f - timer) * 255)));
@@ -193,6 +253,13 @@ public class fs_armorremoved extends BaseShipSystemScript {
         if (ship == null) {
             return;
         }
+        for (WeaponAPI a : ship.getAllWeapons()) {
+            for (int i = 0; i < this.FS_MISSILEWEAPON.size(); i++) {
+                if (Objects.equals(a.getSpec().getWeaponId(), this.FS_MISSILEWEAPON.get(i))) {
+                    a.setAmmo(0);
+                }
+            }
+        }
         stats.getMaxSpeed().unmodifyFlat(id1);
         stats.getAcceleration().unmodifyFlat(id1);
         init1 = false;
@@ -205,6 +272,56 @@ public class fs_armorremoved extends BaseShipSystemScript {
         FS_ORGRIGHTCENT = new Vector2f[7];
         arg = 0f;
         step++;
+    }
+
+    public static class Fs_ArmorcontrolPlugin implements CombatLayeredRenderingPlugin {
+        private final ShipAPI ships;
+        private float timer1;
+
+        public Fs_ArmorcontrolPlugin(ShipAPI ship) {
+            ships = ship;
+        }
+
+        public void init(CombatEntityAPI entity) {
+
+        }
+
+        @Override
+        public void cleanup() {
+        }
+
+        @Override
+        public boolean isExpired() {
+            return ships == null;//返回值为true时，Plugin删除，因此当计时器超过三秒后删除。
+        }
+
+        @Override
+        public void advance(float amount) {
+            timer1 += amount;
+            if (timer1 >= 10f) {
+                for (WeaponAPI a : ships.getAllWeapons()) {
+                    if (a.getSpec().getType() == WeaponAPI.WeaponType.DECORATIVE) {
+                        a.getSprite().setColor(new Color(0, 0, 0, 0));
+                    }
+                }
+            }
+        }
+
+        @Override
+        public EnumSet<CombatEngineLayers> getActiveLayers() {
+            return null;
+        }
+
+        @Override
+        public float getRenderRadius() {
+            return 0;
+        }
+
+        @Override
+        public void render(CombatEngineLayers layer, ViewportAPI viewport) {
+
+        }
+
     }
 
 }

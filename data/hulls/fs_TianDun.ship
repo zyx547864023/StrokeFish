@@ -11,12 +11,31 @@
   "shieldCenter": [0, -0],
   "shieldRadius": 172.5,
   "viewOffset": 0,
+  "builtInMods": [
+    "fs_TianDunWeaponChange"
+  ],
   "builtInWeapons": {
     "WS0013": "fs_TianDun_cover",
-    "WS0014": "fs_TianDunXianQuan_left",
-    "WS0015": "fs_TianDunXianQuan_right"
   },
   "weaponSlots": [
+    {
+      "id": "WS0014",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": 0,
+      "locations": [94.5, 50]
+    },
+    {
+      "id": "WS0015",
+      "size": "LARGE",
+      "type": "BUILT_IN",
+      "mount": "HARDPOINT",
+      "arc": 0,
+      "angle": -0,
+      "locations": [94.5, -50]
+    },
     {
       "id": "WS0001",
       "size": "MEDIUM",
@@ -36,7 +55,7 @@
       "locations": [54.5, 18]
     },
     {
-      "id": "WS0003",
+      "id": "WS0103",
       "size": "SMALL",
       "type": "MISSILE",
       "mount": "HARDPOINT",
@@ -45,7 +64,7 @@
       "locations": [83, 28]
     },
     {
-      "id": "WS0004",
+      "id": "WS0104",
       "size": "SMALL",
       "type": "MISSILE",
       "mount": "HARDPOINT",
@@ -133,24 +152,6 @@
       "arc": 0,
       "angle": 0,
       "locations": [-21, -0.5]
-    },
-    {
-      "id": "WS0014",
-      "size": "LARGE",
-      "type": "BUILT_IN",
-      "mount": "HARDPOINT",
-      "arc": 0,
-      "angle": 0,
-      "locations": [94.5, 50]
-    },
-    {
-      "id": "WS0015",
-      "size": "LARGE",
-      "type": "BUILT_IN",
-      "mount": "HARDPOINT",
-      "arc": 0,
-      "angle": -0,
-      "locations": [94.5, -50]
     }
   ],
   "engineSlots": [

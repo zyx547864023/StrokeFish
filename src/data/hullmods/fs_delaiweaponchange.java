@@ -1,5 +1,6 @@
 package data.hullmods;
 
+import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.combat.BaseHullMod;
 import com.fs.starfarer.api.combat.MutableShipStatsAPI;
 import com.fs.starfarer.api.combat.ShipAPI;
@@ -40,10 +41,11 @@ public class fs_delaiweaponchange extends BaseHullMod {
     {
 
         boolean toWSwitchLeft = true;
-
+        int index = 0;
         for (int i = 0; i < this.FS_DELAIWEAPON_TARGET.size(); i++) {
             if (stats.getVariant().getHullMods().contains(this.FS_DELAIHULLMOD_SWITCH.get(i))) {
                 toWSwitchLeft = false;
+                index = i;
             }
         }
 
@@ -69,7 +71,11 @@ public class fs_delaiweaponchange extends BaseHullMod {
                 stats.getVariant().autoGenerateWeaponGroups();
             }
         }
-
+        else {
+            stats.getVariant().clearSlot(fs_delaislot);
+            String toWInstallLeft = this.FS_DELAIWEAPON_SWITCH.get(index);
+            stats.getVariant().addWeapon(fs_delaislot, toWInstallLeft);
+        }
     }
 
 

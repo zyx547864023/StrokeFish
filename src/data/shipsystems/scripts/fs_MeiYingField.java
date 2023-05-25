@@ -5,6 +5,7 @@ import com.fs.starfarer.api.combat.*;
 import com.fs.starfarer.api.graphics.SpriteAPI;
 import com.fs.starfarer.api.impl.combat.BaseShipSystemScript;
 import com.fs.starfarer.api.input.InputEventAPI;
+import com.fs.starfarer.combat.entities.Ship;
 import data.scripts.plugins.MagicRenderPlugin;
 import data.util.fs_Util;
 import org.dark.shaders.distortion.DistortionShader;
@@ -204,25 +205,29 @@ public class fs_MeiYingField extends BaseShipSystemScript {
                     if(MathUtils.getDistance(leftPonit, missileAPI.getLocation()) <= deviation||MathUtils.getDistance(rightPonit, missileAPI.getLocation()) <= deviation) {
                         if(missileAPI.getWeapon()!=null)
                             if(missileAPI.getWeapon().getSpec()!=null) {
-                                String oldId = missileAPI.getWeapon().getSpec().getWeaponId();
-                                if(oldId!=null) {
-                                    if (ship != null) {
-                                        try {
-                                            DamagingProjectileAPI newProjectile = (DamagingProjectileAPI) engine.spawnProjectile(ship, null,
-                                                    oldId,
-                                                    oldLocation,
-                                                    ship.getFacing(),
-                                                    ship.getVelocity());
-                                            MissileAPI newMissile = (MissileAPI) newProjectile;
-                                            engine.applyDamageModifiersToSpawnedProjectileWithNullWeapon(
-                                                    ship, WeaponAPI.WeaponType.MISSILE, false, newMissile.getDamage());
-                                            //engine.removeObject(missileAPI);
-                                            removeMissile.add(missileAPI);
-                                        }catch (Exception e)
-                                        {
-                                            Global.getLogger(this.getClass()).info(e);
+                                if (!"hurricane".equals(missileAPI.getWeaponSpec().getWeaponId())) {
+                                    String oldId = missileAPI.getWeapon().getSpec().getWeaponId();
+                                    if (oldId != null) {
+                                        if (ship != null) {
+                                            try {
+                                                DamagingProjectileAPI newProjectile = (DamagingProjectileAPI) engine.spawnProjectile(ship, null,
+                                                        oldId,
+                                                        oldLocation,
+                                                        ship.getFacing(),
+                                                        ship.getVelocity());
+                                                MissileAPI newMissile = (MissileAPI) newProjectile;
+                                                engine.applyDamageModifiersToSpawnedProjectileWithNullWeapon(
+                                                        ship, WeaponAPI.WeaponType.MISSILE, false, newMissile.getDamage());
+                                                //engine.removeObject(missileAPI);
+                                                removeMissile.add(missileAPI);
+                                            } catch (Exception e) {
+                                                Global.getLogger(this.getClass()).info(e);
+                                            }
                                         }
                                     }
+                                }
+                                else {
+                                    missileAPI.setOwner(ship.getOwner());
                                 }
                             }
                     }

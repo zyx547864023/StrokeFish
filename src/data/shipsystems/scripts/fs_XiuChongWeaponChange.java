@@ -118,7 +118,7 @@ public class fs_XiuChongWeaponChange extends BaseShipSystemScript {
                                     for (int i = 0; i < 30; i++) {
                                         String thisProjSpecId = PROJ_SPEC_ID + MathUtils.getRandomNumberInRange(1, 3);
 
-                                        Global.getLogger(this.getClass()).info(thisProjSpecId);
+                                        //Global.getLogger(this.getClass()).info(thisProjSpecId);
                                         newProjectile = engine.spawnProjectile(ship, null,
                                                 thisProjSpecId, p.getLocation(), p.getFacing() + MathUtils.getRandomNumberInRange(-30, 30),
                                                 ship.getVelocity());
